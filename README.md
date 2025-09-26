@@ -1,37 +1,25 @@
-# Session ID - Session Title
+# XP261 - Identity lifecycle management with SAP BTP and Microsoft Entra
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2025 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2025 session XP261 - Identity lifecycle management with SAP BTP and Microsoft Entra.  
 
 ## Overview
 
-This session introduces attendees to...
+Learn how to integrate SAP Cloud Identity Services with Microsoft Entra to deliver unified user lifecycle management across SAP software and third-party applications. The end-to-end scenario in this hands-on session spans across cloud and on-premises environments to provide consistent access control throughout the enterprise.
+<img src=".\scenario.png"/>
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+To follow all exercises in this session, please make sure that you have a mobile phone where an Authenticator app, such as the [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app), is installed. For administrative access to Microsoft Entra, multi-factor authentication is mandatory. Follow the [Getting Started](exercises/ex0/) guide to setup MFA for your user in this session.
 
 ## Exercises
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
+- [Exercise 1 - Onboard a new employee in SAP SuccessFactors](exercises/ex1/)
+- [Exercise 2 - Provision the new employee to Microsoft Entra ID](exercises/ex2/)
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
