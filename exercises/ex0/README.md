@@ -1,8 +1,8 @@
 # Getting started
-Please follow the steps described in this *Getting Started* section to prepare your user account for accessing the systems in this hands-on session.
+Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session.
 
-This chapter contains the information for  the following systems: 
-* Microsoft Entra 
+You will get access to the following systems: 
+* Microsoft EntraID 
 * SAP Cloud Identity Services
 * SAP SuccessFactors
 * SAP S/4 HANA Private Edition 
@@ -12,7 +12,7 @@ This chapter contains the information for  the following systems:
 
 ## Accessing  EntraID 
 
-## Setup Multifactor Authentication (MFA)
+### Setup Multifactor Authentication (MFA)
 
 | Step   | Description                | Screenshot |
 | :----- | :------------------------- | :--------- |
@@ -96,7 +96,7 @@ URL: https://teched2025-XY.accounts.ondemand.com/admin/
    
    <img src="/exercises/ex0/images/S12.png" width=50% height=50%>
    
-## Accessing SAP SuccessFactors sytem 
+## Accessing SAP SuccessFactors  
 
 ## Accessing SAP S/4 HANA Private Edition 
 ## Accessing BTP subaccount
