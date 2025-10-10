@@ -1,4 +1,4 @@
-# Exercise 4 - Exercise 4 Description
+# Exercise 2 - Sync SAP backend roles in Microsoft Entra 
 
 In this exercise, we will create...
 

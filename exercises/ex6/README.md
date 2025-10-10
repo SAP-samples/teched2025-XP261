@@ -1,4 +1,4 @@
-# Exercise 3 - Onboard new employee in SAP SFSF
+# (Optional) Exercise 6 - Real time provisioning of SCI group assignments
 
 In this exercise, we will create...
 
@@ -13,4 +13,3 @@ In this exercise, we will create...
 You've now ...
 
 Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
-
