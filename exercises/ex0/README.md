@@ -1,7 +1,16 @@
 # Getting started
 Please follow the steps described in this *Getting Started* section to prepare your user account for accessing the systems in this hands-on session.
 
+This chapter contains the information for  the following systems: 
+* Microsoft Entra 
+* SAP Cloud Identity Services
+* SAP SuccessFactors
+* SAP S/4 HANA Private Edition 
+* BTP subaccount 
+
 **Duration: 5 minutes.**
+
+## Accessing  EntraID 
 
 ## Setup Multifactor Authentication (MFA)
 
@@ -24,7 +33,7 @@ Please follow the steps described in this *Getting Started* section to prepare y
 
 Congratulations for completing the initial setup steps. Now get started with exercise [exercise 1](../ex1/README.md), or go back to the [overview](../README.md).
 
-## Accessing the SAP Cloud Identity Services tenant
+## Accessing SAP Cloud Identity Services 
 
 Now that we know what the SAP Cloud Services are and we understood what the scope of this hands-on session is, let us check the system access. For this session you will need access to a SAP Cloud Identity Service (SCI) tenant and a SAP SuccessFactors instance. 
 
@@ -87,4 +96,12 @@ URL: https://teched2025-XY.accounts.ondemand.com/admin/
    
    <img src="/exercises/ex0/images/S12.png" width=50% height=50%>
    
+## Accessing SAP SuccessFactors sytem 
 
+## Accessing SAP S/4 HANA Private Edition 
+## Accessing BTP subaccount
+
+
+## Summary
+
+Now that you have logged in your systems, continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
