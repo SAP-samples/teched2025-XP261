@@ -42,51 +42,50 @@ Now that we know what the SAP Cloud Services are and we understood what the scop
 The SAP Cloud Identity Service tenant URL is specific for your seat in the workshop room.  
 
 Seat number in workshop: XY 
-URL: https://teched2025-XY.accounts.ondemand.com/admin/ 
+URL: https://bestrunXY.accounts.ondemand.com/admin/ 
 
 | Seat         | SCI tenant | 
 |--------------|:-----:|
-| 01|  https://teched2025-01.accounts.ondemand.com/admin/   |        
-| 02|  https://teched2025-02.accounts.ondemand.com/admin/   |       
-| 03|  https://teched2025-03.accounts.ondemand.com/admin/   |        
-| 04|  https://teched2025-04.accounts.ondemand.com/admin/   |        
-| 05|  https://teched2025-05.accounts.ondemand.com/admin/   |        
-| 06|  https://teched2025-06.accounts.ondemand.com/admin/   |        
-| 07|  https://teched2025-07.accounts.ondemand.com/admin/   |        
-| 08|  https://teched2025-08.accounts.ondemand.com/admin/   |        
-| 09|  https://teched2025-09.accounts.ondemand.com/admin/   |        
-| 10|  https://teched2025-10.accounts.ondemand.com/admin/   |        
-| 11|  https://teched2025-11.accounts.ondemand.com/admin/   |        
-| 12|  https://teched2025-12.accounts.ondemand.com/admin/   |        
-| 13|  https://teched2025-13.accounts.ondemand.com/admin/   |        
-| 14|  https://teched2025-14.accounts.ondemand.com/admin/   |        
-| 15|  https://teched2025-15.accounts.ondemand.com/admin/   |        
-| 16|  https://teched2025-16.accounts.ondemand.com/admin/   |        
-| 17|  https://teched2025-17.accounts.ondemand.com/admin/   |        
-| 18|  https://teched2025-18.accounts.ondemand.com/admin/   |        
-| 19|  https://teched2025-19.accounts.ondemand.com/admin/   |        
-| 20|  https://teched2025-20.accounts.ondemand.com/admin/   |        
-| 21|  https://teched2025-21.accounts.ondemand.com/admin/   |        
-| 22|  https://teched2025-22.accounts.ondemand.com/admin/   |       
-| 23|  https://teched2025-23.accounts.ondemand.com/admin/   |        
-| 24|  https://teched2025-24.accounts.ondemand.com/admin/   |        
-| 25|  https://teched2025-25.accounts.ondemand.com/admin/   |        
-| 26|  https://teched2025-26.accounts.ondemand.com/admin/   |       
-| 27|  https://teched2025-27.accounts.ondemand.com/admin/   |        
-| 28|  https://teched2025-28.accounts.ondemand.com/admin/   |       
-| 29|  https://teched2025-29.accounts.ondemand.com/admin/   |      
-| 30|  https://teched2025-30.accounts.ondemand.com/admin/   |       
-| 31|  https://teched2025-31.accounts.ondemand.com/admin/   |        
-| 32|  https://teched2025-32.accounts.ondemand.com/admin/   |        
-| 33|  https://teched2025-33.accounts.ondemand.com/admin/   |       
-| 34|  https://teched2025-34.accounts.ondemand.com/admin/   |       
-| 35|  https://teched2025-35.accounts.ondemand.com/admin/   |      
-| 36|  https://teched2025-36.accounts.ondemand.com/admin/   |   
-| 37|  https://teched2025-37.accounts.ondemand.com/admin/   |        
-| 38|  https://teched2025-38.accounts.ondemand.com/admin/   |        
-| 39|  https://teched2025-39.accounts.ondemand.com/admin/   |      
-| 40|  https://teched2025-40.accounts.ondemand.com/admin/   |      
-
+| 01|  https://bestrun01.accounts.ondemand.com/admin/   |        
+| 02|  https://bestrun02.accounts.ondemand.com/admin/   |       
+| 03|  https://bestrun03.accounts.ondemand.com/admin/   |        
+| 04|  https://bestrun04.accounts.ondemand.com/admin/   |        
+| 05|  https://bestrun05.accounts.ondemand.com/admin/   |        
+| 06|  https://bestrun06.accounts.ondemand.com/admin/   |        
+| 07|  https://bestrun07.accounts.ondemand.com/admin/   |        
+| 08|  https://bestrun08.accounts.ondemand.com/admin/   |        
+| 09|  https://bestrun09.accounts.ondemand.com/admin/   |        
+| 10|  https://bestrun10.accounts.ondemand.com/admin/   |        
+| 11|  https://bestrun11.accounts.ondemand.com/admin/   |        
+| 12|  https://bestrun12.accounts.ondemand.com/admin/   |        
+| 13|  https://bestrun13.accounts.ondemand.com/admin/   |        
+| 14|  https://bestrun14.accounts.ondemand.com/admin/   |        
+| 15|  https://bestrun15.accounts.ondemand.com/admin/   |        
+| 16|  https://bestrun16.accounts.ondemand.com/admin/   |        
+| 17|  https://bestrun17.accounts.ondemand.com/admin/   |        
+| 18|  https://bestrun18.accounts.ondemand.com/admin/   |        
+| 19|  https://bestrun19.accounts.ondemand.com/admin/   |        
+| 20|  https://bestrun20.accounts.ondemand.com/admin/   |        
+| 21|  https://bestrun21.accounts.ondemand.com/admin/   |        
+| 22|  https://bestrun22.accounts.ondemand.com/admin/   |       
+| 23|  https://bestrun23.accounts.ondemand.com/admin/   |        
+| 24|  https://bestrun24.accounts.ondemand.com/admin/   |        
+| 25|  https://bestrun25.accounts.ondemand.com/admin/   |        
+| 26|  https://bestrun26.accounts.ondemand.com/admin/   |       
+| 27|  https://bestrun27.accounts.ondemand.com/admin/   |        
+| 28|  https://bestrun28.accounts.ondemand.com/admin/   |       
+| 29|  https://bestrun29.accounts.ondemand.com/admin/   |      
+| 30|  https://bestrun30.accounts.ondemand.com/admin/   |       
+| 31|  https://bestrun31.accounts.ondemand.com/admin/   |        
+| 32|  https://bestrun32.accounts.ondemand.com/admin/   |        
+| 33|  https://bestrun33.accounts.ondemand.com/admin/   |       
+| 34|  https://bestrun34.accounts.ondemand.com/admin/   |       
+| 35|  https://bestrun35.accounts.ondemand.com/admin/   |      
+| 36|  https://bestrun36.accounts.ondemand.com/admin/   |   
+| 37|  https://bestrun37.accounts.ondemand.com/admin/   |        
+| 38|  https://bestrun38.accounts.ondemand.com/admin/   |        
+| 39|  https://bestrun39.accounts.ondemand.com/admin/   |      
+| 40|  https://bestrun40.accounts.ondemand.com/admin/   |      
 
 2. Type the username and password and press **Log On**
 
