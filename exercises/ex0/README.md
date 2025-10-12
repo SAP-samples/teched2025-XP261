@@ -2,11 +2,11 @@
 Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session.
 
 You will get access to the following systems: 
-* Microsoft EntraID 
-* SAP Cloud Identity Services
-* SAP SuccessFactors
-* SAP S/4 HANA Private Edition 
-* BTP subaccount 
+* [Microsoft EntraID](#-Setup-Multifactor-Authentication(MFA)) 
+*  [SAP Cloud Identity Services](#Accessing-SAP-Cloud-Identity-Services)
+* [SAP SuccessFactors](#Accessing-SAP-SuccessFactors])
+* [SAP S/4 HANA Private Edition](#Accessing-SAP-S/4-HANA-Private-Edition)
+* [BTP subaccount](#Accessing-BTP-subaccount) 
 
 **Duration: 5 minutes.**
 
