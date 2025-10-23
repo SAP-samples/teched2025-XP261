@@ -44,7 +44,7 @@ With the previously created two systems we are importing in the Identity Directo
 5. Now save your system. 
 
 
-### Exercise 1.1.2 Create one IPS source system for provisioning to SAP back-end applications
+### Exercise 1.1.3 Create one IPS source system for provisioning to SAP back-end applications
 We will create this system manually. 
 
 1. Click on the **Add** button and then choose the type **Local Identity Directory**
@@ -80,11 +80,12 @@ Now let's proceed with the target systems.
 
 2. Save these ([XP261](./images/XP261.json), [S4A](./images/S4A.json) & [Local Directory](./images/LocalDirectory.json)) JSON files locally because you will need to import them in the next step. 
 
+### Exercise 1.2.1 Create one IPS source system for provisioning to SAP back-end applications
 
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+### Exercise 1.2.2 Create one IPS source system for provisioning to SAP back-end applications
+### Exercise 1.2.3 Create one IPS source system for provisioning to SAP back-end applications
+### Exercise 1.2.3 Create one IPS source system for provisioning to SAP back-end applications
 
-## Exercise 1.3 Trigger authorization synchronization  
 
 ## Summary
 
