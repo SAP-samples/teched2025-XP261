@@ -7,32 +7,21 @@ In this exercise, we will import the back-en authorizations to IdDS. For this, w
 * We will create another source system for assignment and user provisioning to the SAP solutions
 * Last but not least, we will create target systems for user and groups assignments 
 
+## Exercise 1.1  IPS source systems creation
 
-
-1	Create IPS source systems: SAP ABAP with filter for reading specific groups, SAP BTP XSUAA 
-2	Create IPS target systems: IdDS 
-3	Create IPS target systems for central store-based provisioning: SAP ABAP, SAP S/4 on-prem, SAP BTP XSUAA
-4	Create two IPS source system for central store-based provisioning: SAP IdDS
-5	Enable the Central Store-Based Provisioning option under Applications & Resources -> Application -> Provisioning.
-6	Initial load ABAP -> SAP SCI 
-7	Initial load SAPBTP XSUAA -> SAP SCI 
-8	Verify that new /Groups are created in SAP SCI, belonging to the S/4 PCE and the SAP BTP XSUAA subaccount 
-
-
-## Exercise 2.1  IPS source systems creation
-
-### Exercise 2.1.1 Create IPS source system for syncing authorizations from back-end
+### Exercise 1.1.1 Create IPS source system for syncing authorizations from back-end
 
 1. Navigate to the SCI administrative console that corresponds to your seat. From the third tab Identity Provisioning please choose **Source Systems**.
 <img src="/exercises/ex1/images/S11.png" width=50% height=50%>
 
-2. Save these ([XP261](./images/XP261.json) & [S4A](./images/S4A.json) ) JSON files locally because you will need to import them in the next step
+2. Save these ([XP261](./images/XP261.json), [S4A](./images/S4A.json) & [Local Directory](./images/LocalDirectory.json)) JSON files locally because you will need to import them in the next step. Press on **Download Raw File** in the window that will open. 
 
-
+<img src="/exercises/ex1/images/S14.png" width=50% height=50%>
 
 3. Click on the **Add** button and then click on Browse and search for the **XP261** file that you previously saved.
 
-<img src="/exercises/ex1/images/S12.png" width=50% height=50%>
+<img src="/exercises/ex1/images/S12.png" width=100% height=100%>
+
 
 4. Navigate  to the third tab  **Properties** tab and fill in the red marked properties: 
 <img src="/exercises/ex1/images/S13.png" width=50% height=50%>
@@ -44,27 +33,53 @@ In this exercise, we will import the back-en authorizations to IdDS. For this, w
 
 7. Now save your system.  
 
-### Exercise 2.1.2 Create one IPS source system for syncing authorizations to Entra ID
-1. 
+### Exercise 1.1.2 Create one IPS source system for syncing authorizations to Entra ID
 
-### Exercise 2.1.2 Create one IPS source system for provisioning to SAP back-end applications
+With the previously created two systems we are importing in the Identity Directory all the authorizations from the SAP back-end applications. Because we want to sync these authorization to Entra ID, we will add a new source system that will be later chosen as a source for an Entra ID target.
+
+1. We will repeat steps 3 and 4 from the previous section and use the **Local Directory** file. 
+
+2. Navigate  to the third tab  **Properties** tab.  Note that for this system type you do not need to specify connection details. This is because the local store inside this tenant is used. 
+
+5. Now save your system. 
+
+
+### Exercise 1.1.2 Create one IPS source system for provisioning to SAP back-end applications
+We will create this system manually. 
+
+1. Click on the **Add** button and then choose the type **Local Identity Directory**
+<img src="/exercises/ex1/images/S15.png" width=50% height=50%>
+
+Give your system a meaningful name. Our suggestion is *Local Directory SAP Provisioning*.
+
+2. Navigate to the Properties tab and manually add the following standard properties.
+
+| Property Name | Property Value | 
+|--------------|:-----:|
+| idds.user.filter|  groups.display sw "TECHED_"  |        
+| ips.trace.created.entity|  true  |  
+| ips.trace.created.entity.content|  true  |
+| ips.trace.failed.entity.content|  true  |
+| ips.trace.skipped.entity|  true  |
+| ips.trace.skipped.entity.content|  true  |
+| ips.trace.updated.entity|  true  |
+| ips.trace.updated.entity.content|  true  |  
+
+
+3. Check that your system looks like this: 
+
+<img src="/exercises/ex1/images/S16.png" width=50% height=50%>
 
 
 ## Exercise 1.2 IPS target systems creation
 
-After completing these steps you will have...
+Now let's proceed with the target systems. 
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
+1.  From the SCI administrative console, tab Identity Provisioning we now choose **Target Systems**.
+<img src="/exercises/ex1/images/S17.png" width=50% height=50%>
 
-```
+2. Save these ([XP261](./images/XP261.json), [S4A](./images/S4A.json) & [Local Directory](./images/LocalDirectory.json)) JSON files locally because you will need to import them in the next step. 
+
 
 2.	Click here.
 <br>![](/exercises/ex1/images/01_02_0010.png)
