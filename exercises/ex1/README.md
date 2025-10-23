@@ -26,7 +26,7 @@ In this exercise, we will import the back-en authorizations to IdDS. For this, w
 1. Navigate to the SCI administrative console that corresponds to your seat. From the third tab Identity Provisioning please choose **Source Systems**.
 <img src="/exercises/ex1/images/S11.png" width=50% height=50%>
 
-2. Save these ([XP261](./exercises/ex1/images/XP261.json) & [S4A](./exercises/ex1/images/S4A.json) ) JSON files locally because you will need to import them in the next step
+2. Save these ([XP261](./images/XP261.json) & [S4A](./images/S4A.json) ) JSON files locally because you will need to import them in the next step
 
 
 
