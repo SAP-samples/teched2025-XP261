@@ -3,12 +3,12 @@ Please follow the steps described in this section to prepare your user account f
 
 You will get access to the following systems: 
 * [Microsoft EntraID](#-Setup-Multifactor-Authentication(MFA)) 
-*  [SAP Cloud Identity Services](#Accessing-SAP-Cloud-Identity-Services)
+* [SAP Cloud Identity Services](#Accessing-SAP-Cloud-Identity-Services)
 * [SAP SuccessFactors](#Accessing-SAP-SuccessFactors])
 * [SAP S/4 HANA Private Edition](#Accessing-SAP-S/4-HANA-Private-Edition)
 * [BTP subaccount](#Accessing-BTP-subaccount) 
 
-**Duration: 5 minutes.**
+**Duration: ?? minutes.**
 
 ## Accessing  EntraID 
 
@@ -111,15 +111,22 @@ Create a new connection:
 <img src="/exercises/ex0/images/S14.png" width=50% height=50%>
 
 Add the following details:
-
+| Description | TechEd 2025 |  
 | System ID | S4A |        
-| Instance| 00 |       
-| IP| 34.6.95.215 |        
-| Client| 101 | 
+| Instance | 00 |       
+| IP | s4xp261.tdc.sap.com |        
+| Client | 101 | 
 
 <img src="/exercises/ex0/images/S15.png" width=50% height=50%>
 
 <img src="/exercises/ex0/images/S16.png" width=50% height=50%>
+
+Now that you have created the new connection let's log in ! 
+
+| Client | 101 | 
+
+<img src="/exercises/ex0/images/S18.png" width=50% height=50%>
+
 
 
 ## Accessing BTP subaccount
