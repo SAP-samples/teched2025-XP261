@@ -3,7 +3,8 @@
 In this exercise, we will import the back-en authorizations to IdDS. For this, we will create IPS source and target systems.  
 
 * We will start by creating source systems for importing authorizations in SAP SCI from the SAP S/4 and the BTP Subaccount. 
-* These authorization will be sent via IPS to the Entra ID tenant in [exercise 3](../ex2/README.md). Entra ID is the IdM solution responsible for assignments, therefore we need the SAP authorizations in the Entra IDtenant. For this purpose, we will create a target system that corresponds to Entra ID. 
+* These authorization will be sent via IPS to the Entra ID tenant in [exercise 2](../ex2/README.md). Entra ID is the IdM solution responsible for assignments, therefore we need the SAP authorizations in the Entra ID tenant. For this purpose, we will create a target system that corresponds to Entra ID. 
+* We will create another source system for assignment and user provisioning to the SAP solutions
 * Last but not least, we will create target systems for user and groups assignments 
 
 
@@ -18,21 +19,36 @@ In this exercise, we will import the back-en authorizations to IdDS. For this, w
 8	Verify that new /Groups are created in SAP SCI, belonging to the S/4 PCE and the SAP BTP XSUAA subaccount 
 
 
-## Exercise 1.1 Create IPS source systems
+## Exercise 2.1  IPS source systems creation
 
-After completing these steps you will have created...
+### Exercise 2.1.1 Create IPS source system for syncing authorizations from back-end
 
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
+1. Navigate to the SCI administrative console that corresponds to your seat. From the third tab Identity Provisioning please choose **Source Systems**.
+<img src="/exercises/ex1/images/S11.png" width=50% height=50%>
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
+2. Save these ([XP261](src="/exercises/ex1/images/XP261.json") & [S4A](src="/exercises/ex1/images/S4A.json") ) JSON files locally because you will need to import them in the next step
+
+3. Click on the **Add** button and then click on Browse and search for the **XP261** file that you previously saved.
+
+<img src="/exercises/ex1/images/S12.png" width=50% height=50%>
+
+4. Navigate  to the third tab  **Properties** tab and fill in the red marked properties: 
+<img src="/exercises/ex1/images/S13.png" width=50% height=50%>
+
+5. Now save your system. 
+
+6. Now let's add the SAP S/4 HANA private edition system as well. We will repeat steps 3 and 4 and use the **S4A** file. Navigate to the **Properties** tab and fill in the red marked properties: 
+<img src="/exercises/ex1/images/S13.png" width=50% height=50%>
+
+7. Now save your system.  
+
+### Exercise 2.1.2 Create one IPS source system for syncing authorizations to Entra ID
+1. 
+
+### Exercise 2.1.2 Create one IPS source system for provisioning to SAP back-end applications
 
 
-
-## Exercise 1.2 Create IPS target systems
+## Exercise 1.2 IPS target systems creation
 
 After completing these steps you will have...
 
