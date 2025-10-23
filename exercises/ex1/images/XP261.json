@@ -1,0 +1,87 @@
+{
+    "id": "a03f12e6-446c-4f6a-87ad-d3547c51bf7e",
+    "connectorTypeString": "XSUAA",
+    "accessMode": "READ",
+    "destinationName": "",
+    "gitAllowedExpressions": [],
+    "gitDisallowedExpressions": [],
+    "emailSubscribers": [],
+    "name": "BTP Subaccount XP261",
+    "tenantId": "teched2025-00",
+    "state": "ENABLED",
+    "systemManagementType": "CUSTOMER_MANAGED",
+    "properties": {
+        "Authentication": "BasicAuthentication",
+        "ips.application.id": "692c114a-4b3f-4e76-bd08-fb2e9ad0ee22",
+        "ips.trace.failed.entity.content": "false",
+        "ips.trace.skipped.entity.content": "false",
+        "OAuth2TokenServiceURL": "https://xp261-000.authentication.eu10.hana.ondemand.com/oauth/token",
+        "ProxyType": "Internet",
+        "scim.group.filter": "displayname eq \"XP261_\"",
+        "Type": "HTTP",
+        "URL": "https://api.authentication.eu10.hana.ondemand.com",
+        "User": "sb-na-0eede8ee-20d3-4c21-aaef-c1931d8220f5!a598226",
+        "xsuaa.group.prefix": "TECHED_BTP_"
+    },
+    "encryptedProperties": {
+        "Password": null
+    },
+    "automaticOutboundCertificateRenew": false,
+    "transformationChanged": true,
+    "readTransformationChanged": false,
+    "writeTransformationChanged": false,
+    "fromImport": false,
+    "transformation": {
+        "group": {
+            "condition": "$.displayName === 'XP261_000'",
+            "mappings": [
+                {
+                    "sourcePath": "$.id",
+                    "targetVariable": "entityIdSourceSystem"
+                },
+                {
+                    "sourcePath": "$.displayName",
+                    "targetPath": "$.displayName",
+                    "functions": [
+                        {
+                            "function": "concatString",
+                            "condition": "'%xsuaa.group.prefix%' !== 'null'",
+                            "prefix": "%xsuaa.group.prefix%"
+                        }
+                    ]
+                },
+                {
+                    "sourcePath": "$.description",
+                    "optional": true,
+                    "targetPath": "$.description"
+                },
+                {
+                    "sourcePath": "$.zoneId",
+                    "optional": true,
+                    "targetPath": "$.zoneId"
+                },
+                {
+                    "sourcePath": "$.members",
+                    "preserveArrayWithSingleElement": true,
+                    "optional": true,
+                    "targetPath": "$.members"
+                },
+                {
+                    "condition": "'%ips.application.id%' !== 'null'",
+                    "constant": "%ips.application.id%",
+                    "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+                },
+                {
+                    "constant": "authorization",
+                    "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+                },
+                {
+                    "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+                    "optional": true,
+                    "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+                }
+            ]
+        }
+    },
+    "gitFetchAllowed": false
+}

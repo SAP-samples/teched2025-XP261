@@ -3,12 +3,12 @@ Please follow the steps described in this section to prepare your user account f
 
 You will get access to the following systems: 
 * [Microsoft EntraID](#-Setup-Multifactor-Authentication(MFA)) 
-*  [SAP Cloud Identity Services](#Accessing-SAP-Cloud-Identity-Services)
+* [SAP Cloud Identity Services](#Accessing-SAP-Cloud-Identity-Services)
 * [SAP SuccessFactors](#Accessing-SAP-SuccessFactors])
 * [SAP S/4 HANA Private Edition](#Accessing-SAP-S/4-HANA-Private-Edition)
 * [BTP subaccount](#Accessing-BTP-subaccount) 
 
-**Duration: 5 minutes.**
+**Duration: ?? minutes.**
 
 ## Accessing  EntraID 
 
@@ -35,9 +35,7 @@ Congratulations for completing the initial setup steps. Now get started with exe
 
 ## Accessing SAP Cloud Identity Services 
 
-Now that we know what the SAP Cloud Services are and we understood what the scope of this hands-on session is, let us check the system access. For this session you will need access to a SAP Cloud Identity Service (SCI) tenant and a SAP SuccessFactors instance. 
-
-1. Search for the internet browser on your computer and navigate to your SCI administrative console.
+Search for the internet browser on your computer and navigate to your SCI administrative console.
 
 The SAP Cloud Identity Service tenant URL is specific for your seat in the workshop room.  
 
@@ -46,46 +44,46 @@ URL: https://bestrunXY.accounts.ondemand.com/admin/
 
 | Seat         | SCI tenant | 
 |--------------|:-----:|
-| 01|  https://bestrun01.accounts.ondemand.com/admin/   |        
-| 02|  https://bestrun02.accounts.ondemand.com/admin/   |       
-| 03|  https://bestrun03.accounts.ondemand.com/admin/   |        
-| 04|  https://bestrun04.accounts.ondemand.com/admin/   |        
-| 05|  https://bestrun05.accounts.ondemand.com/admin/   |        
-| 06|  https://bestrun06.accounts.ondemand.com/admin/   |        
-| 07|  https://bestrun07.accounts.ondemand.com/admin/   |        
-| 08|  https://bestrun08.accounts.ondemand.com/admin/   |        
-| 09|  https://bestrun09.accounts.ondemand.com/admin/   |        
-| 10|  https://bestrun10.accounts.ondemand.com/admin/   |        
-| 11|  https://bestrun11.accounts.ondemand.com/admin/   |        
-| 12|  https://bestrun12.accounts.ondemand.com/admin/   |        
-| 13|  https://bestrun13.accounts.ondemand.com/admin/   |        
-| 14|  https://bestrun14.accounts.ondemand.com/admin/   |        
-| 15|  https://bestrun15.accounts.ondemand.com/admin/   |        
-| 16|  https://bestrun16.accounts.ondemand.com/admin/   |        
-| 17|  https://bestrun17.accounts.ondemand.com/admin/   |        
-| 18|  https://bestrun18.accounts.ondemand.com/admin/   |        
-| 19|  https://bestrun19.accounts.ondemand.com/admin/   |        
-| 20|  https://bestrun20.accounts.ondemand.com/admin/   |        
-| 21|  https://bestrun21.accounts.ondemand.com/admin/   |        
-| 22|  https://bestrun22.accounts.ondemand.com/admin/   |       
-| 23|  https://bestrun23.accounts.ondemand.com/admin/   |        
-| 24|  https://bestrun24.accounts.ondemand.com/admin/   |        
-| 25|  https://bestrun25.accounts.ondemand.com/admin/   |        
-| 26|  https://bestrun26.accounts.ondemand.com/admin/   |       
-| 27|  https://bestrun27.accounts.ondemand.com/admin/   |        
-| 28|  https://bestrun28.accounts.ondemand.com/admin/   |       
-| 29|  https://bestrun29.accounts.ondemand.com/admin/   |      
-| 30|  https://bestrun30.accounts.ondemand.com/admin/   |       
-| 31|  https://bestrun31.accounts.ondemand.com/admin/   |        
-| 32|  https://bestrun32.accounts.ondemand.com/admin/   |        
-| 33|  https://bestrun33.accounts.ondemand.com/admin/   |       
-| 34|  https://bestrun34.accounts.ondemand.com/admin/   |       
-| 35|  https://bestrun35.accounts.ondemand.com/admin/   |      
-| 36|  https://bestrun36.accounts.ondemand.com/admin/   |   
-| 37|  https://bestrun37.accounts.ondemand.com/admin/   |        
-| 38|  https://bestrun38.accounts.ondemand.com/admin/   |        
-| 39|  https://bestrun39.accounts.ondemand.com/admin/   |      
-| 40|  https://bestrun40.accounts.ondemand.com/admin/   |      
+| 01|  https://bestruncorp-01.accounts.ondemand.com/admin/   |        
+| 02|  https://bestruncorp-02.accounts.ondemand.com/admin/   |       
+| 03|  https://bestruncorp-03.accounts.ondemand.com/admin/   |        
+| 04|  https://bestruncorp-04.accounts.ondemand.com/admin/   |        
+| 05|  https://bestruncorp-05.accounts.ondemand.com/admin/   |        
+| 06|  https://bestruncorp-06.accounts.ondemand.com/admin/   |        
+| 07|  https://bestruncorp-07.accounts.ondemand.com/admin/   |        
+| 08|  https://bestruncorp-08.accounts.ondemand.com/admin/   |        
+| 09|  https://bestruncorp-09.accounts.ondemand.com/admin/   |        
+| 10|  https://bestruncorp-10.accounts.ondemand.com/admin/   |        
+| 11|  https://bestruncorp-11.accounts.ondemand.com/admin/   |        
+| 12|  https://bestruncorp-12.accounts.ondemand.com/admin/   |        
+| 13|  https://bestruncorp-13.accounts.ondemand.com/admin/   |        
+| 14|  https://bestruncorp-14.accounts.ondemand.com/admin/   |        
+| 15|  https://bestruncorp-15.accounts.ondemand.com/admin/   |        
+| 16|  https://bestruncorp-16.accounts.ondemand.com/admin/   |        
+| 17|  https://bestruncorp-17.accounts.ondemand.com/admin/   |        
+| 18|  https://bestruncorp-18.accounts.ondemand.com/admin/   |        
+| 19|  https://bestruncorp-19.accounts.ondemand.com/admin/   |        
+| 20|  https://bestruncorp-20.accounts.ondemand.com/admin/   |        
+| 21|  https://bestruncorp-21.accounts.ondemand.com/admin/   |        
+| 22|  https://bestruncorp-22.accounts.ondemand.com/admin/   |       
+| 23|  https://bestruncorp-23.accounts.ondemand.com/admin/   |        
+| 24|  https://bestruncorp-24.accounts.ondemand.com/admin/   |        
+| 25|  https://bestruncorp-25.accounts.ondemand.com/admin/   |        
+| 26|  https://bestruncorp-26.accounts.ondemand.com/admin/   |       
+| 27|  https://bestruncorp-27.accounts.ondemand.com/admin/   |        
+| 28|  https://bestruncorp-28.accounts.ondemand.com/admin/   |       
+| 29|  https://bestruncorp-29.accounts.ondemand.com/admin/   |      
+| 30|  https://bestruncorp-30.accounts.ondemand.com/admin/   |       
+| 31|  https://bestruncorp-31.accounts.ondemand.com/admin/   |        
+| 32|  https://bestruncorp-32.accounts.ondemand.com/admin/   |        
+| 33|  https://bestruncorp-33.accounts.ondemand.com/admin/   |       
+| 34|  https://bestruncorp-34.accounts.ondemand.com/admin/   |       
+| 35|  https://bestruncorp-35.accounts.ondemand.com/admin/   |      
+| 36|  https://bestruncorp-36.accounts.ondemand.com/admin/   |   
+| 37|  https://bestruncorp-37.accounts.ondemand.com/admin/   |        
+| 38|  https://bestruncorp-38.accounts.ondemand.com/admin/   |        
+| 39|  https://bestruncorp-39.accounts.ondemand.com/admin/   |      
+| 40|  https://bestruncorp-40.accounts.ondemand.com/admin/   |      
 
 2. Type the username and password and press **Log On**
 
@@ -96,9 +94,52 @@ URL: https://bestrunXY.accounts.ondemand.com/admin/
    <img src="/exercises/ex0/images/S12.png" width=50% height=50%>
    
 ## Accessing SAP SuccessFactors  
+Search for the internet browser on your computer and navigate to your SAP SFSF tenant.
+
+Unlike the previous exercise, we will use a shared SAP SFSF tenant 
+
+URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP062575
+
+ <img src="/exercises/ex0/images/S13.png" width=50% height=50%>
 
 ## Accessing SAP S/4 HANA Private Edition 
+
+Search for the SAP Logon icon <img src="/exercises/ex0/images/S17.png" width=10% height=10%> on your desktop. 
+
+Create a new connection:
+
+<img src="/exercises/ex0/images/S14.png" width=50% height=50%>
+
+Add the following details:
+
+| <!-- --> | <!-- --> |
+| --- | --- |
+| Description| TechEd 2025 |  
+| System ID| S4A |        
+| Instance| 00 |       
+| IP| s4xp261.tdc.sap.com |        
+| Client | 101 | 
+
+<img src="/exercises/ex0/images/S15.png" width=50% height=50%>
+
+<img src="/exercises/ex0/images/S16.png" width=50% height=50%>
+
+Now that you have created the new connection let's log in ! 
+| <!-- --> | <!-- --> |
+| --- | --- |
+| Client | 101 | 
+
+<img src="/exercises/ex0/images/S18.png" width=50% height=50%>
+
+
+
 ## Accessing BTP subaccount
+
+On your internet browser navigate to the global account tenant.
+
+https://emea.cockpit.btp.cloud.sap/cockpit/?idp=teched2025-00.accounts.ondemand.com#/globalaccount/4c772782-0751-42ee-93c3-897452fdcb63/ 
+
+After signing in with the credentials from your SAP Cloud Identity Services user, you will find a subbacout that coresonds to your seat number. Example: XP261_001 for seat number 1. 
 
 
 ## Summary
