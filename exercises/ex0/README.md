@@ -8,15 +8,15 @@ You will get access to the following systems:
 * [SAP S/4 HANA Private Edition](#Accessing-SAP-S/4-HANA-Private-Edition)
 * [BTP subaccount](#Accessing-BTP-subaccount) 
 
-**Duration: ?? minutes.**
+**Duration: 5 minutes.**
 
-## Accessing  EntraID 
+## Accessing EntraID 
 
 ### Setup Multifactor Authentication (MFA)
 
 | Step   | Description                | Screenshot |
 | :----- | :------------------------- | :--------- |
-| 0.1    | Open a new browser windows and go to the [My Account Web Portal](https://myaccount.microsoft.com/) to setup MFA for your Entra administrator user.<br><br>Enter *admin\<N\>@bestruncorp.onmicrosoft.com* for the user name. Replace *\<N\>* with the number of your seat, for example admin4@bestruncorp.onmicrosoft.com.<br><br>Click **Next**.|<a href="./images/0-1.jpg" target="_blank"><img src="./images/0-1.jpg" width="250"/></a>|
+| 0.1    | Open a new browser windows and go to the [My Account Web Portal](https://myaccount.microsoft.com/) to setup MFA for your Entra administrator user.<br><br>Enter `admin<NNN>@bestruncorp.onmicrosoft.com` for the user name. Replace `<NNN>` with the number of your seat, for example admin4@bestruncorp.onmicrosoft.com.<br><br>Click **Next**.|<a href="./images/0-1.jpg" target="_blank"><img src="./images/0-1.jpg" width="250"/></a>|
 | 0.2    | Enter the password.<br><br>Click **Sign in**.|<a href="./images/0-2.jpg" target="_blank"><img src="./images/0-2.jpg" width="250"/></a>|
 | 0.3    | Click **Next**. |<a href="./images/0-3.jpg" target="_blank"><img src="./images/0-3.jpg" width="250"/></a>|
 | 0.4    | Click **Next**. |<a href="./images/0-4.jpg" target="_blank"><img src="./images/0-4.jpg" width="250"/></a>|
