@@ -10,14 +10,14 @@ You will get access to the following systems:
 
 **Duration: 5 minutes.**
 
-## Accessing EntraID 
+## Accessing Microsoft Entra ID
 
 ### Setup Multifactor Authentication (MFA)
 
 | Step   | Description                | Screenshot |
 | :----- | :------------------------- | :--------- |
-| 0.1    | Open a new browser windows and go to the [My Account Web Portal](https://myaccount.microsoft.com/) to setup MFA for your Entra administrator user.<br><br>Enter `admin<NNN>@bestruncorp.onmicrosoft.com` for the user name. Replace `<NNN>` with the number of your seat, for example admin4@bestruncorp.onmicrosoft.com.<br><br>Click **Next**.|<a href="./images/0-1.jpg" target="_blank"><img src="./images/0-1.jpg" width="250"/></a>|
-| 0.2    | Enter the password.<br><br>Click **Sign in**.|<a href="./images/0-2.jpg" target="_blank"><img src="./images/0-2.jpg" width="250"/></a>|
+| 0.1    | Open a new browser windows and go to the [My Account Web Portal](https://myaccount.microsoft.com/) to setup MFA for your Entra administrator user.<br><br>Enter `admin<NNN>@bestruncorp.onmicrosoft.com` for the user name. Replace `<NNN>` with the number of your seat, for example admin045@bestruncorp.onmicrosoft.com.<br><br>Click **Next**.|<a href="./images/0-1.jpg" target="_blank"><img src="./images/0-1.jpg" width="250"/></a>|
+| 0.2    | Enter your Entra admin initial login password.<br><br>Replace `<NNN>` at the end of the password with the number of your seat.<br><br>Click **Sign in**.|<a href="./images/0-2.jpg" target="_blank"><img src="./images/0-2.jpg" width="250"/></a>|
 | 0.3    | Click **Next**. |<a href="./images/0-3.jpg" target="_blank"><img src="./images/0-3.jpg" width="250"/></a>|
 | 0.4    | Click **Next**. |<a href="./images/0-4.jpg" target="_blank"><img src="./images/0-4.jpg" width="250"/></a>|
 | 0.5    | Click **Next**. |<a href="./images/0-5.jpg" target="_blank"><img src="./images/0-5.jpg" width="250"/></a>|
@@ -31,16 +31,11 @@ You will get access to the following systems:
 | 0.13   | Your user account is now setup for MFA.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
 | 0.14   | Close the browser tab.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
 
-Congratulations for completing the initial setup steps. Now get started with exercise [exercise 1](../ex1/README.md), or go back to the [overview](../README.md).
+## Accessing your SAP Cloud Identity Services tenant 
 
-## Accessing SAP Cloud Identity Services 
-
-Search for the internet browser on your computer and navigate to your SCI administrative console.
-
-The SAP Cloud Identity Service tenant URL is specific for your seat in the workshop room.  
-
-Seat number in workshop: XY 
-URL: https://bestrunXY.accounts.ondemand.com/admin/ 
+1. Search for the internet browser on your computer and navigate to your SCI administrative console. The SAP Cloud Identity Service tenant URL is specific for your seat in the workshop room.<br>
+URL pattern: https://bestrun-`<NN>`.accounts.ondemand.com/admin/<br>
+Replace `<NN>` with your seat number, for example `05` or `31`.
 
 | Seat         | SCI tenant | 
 |--------------|:-----:|
@@ -87,11 +82,11 @@ URL: https://bestrunXY.accounts.ondemand.com/admin/
 
 2. Type the username and password and press **Log On**
 
-   <img src="/exercises/ex0/images/S11.png" width=50% height=50%>
+   <img src="./images/S11.png" width=50% height=50%>
 
 3. You have access to the SAP Cloud Identity Services administrative console.
    
-   <img src="/exercises/ex0/images/S12.png" width=50% height=50%>
+   <img src="./images/S12.png" width=50% height=50%>
    
 ## Accessing SAP SuccessFactors  
 Search for the internet browser on your computer and navigate to your SAP SFSF tenant.
@@ -100,15 +95,15 @@ Unlike the previous exercise, we will use a shared SAP SFSF tenant
 
 URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP062575
 
- <img src="/exercises/ex0/images/S13.png" width=50% height=50%>
+ <img src="./images/S13.png" width=50% height=50%>
 
 ## Accessing SAP S/4 HANA Private Edition 
 
-Search for the SAP Logon icon <img src="/exercises/ex0/images/S17.png" width=10% height=10%> on your desktop. 
+Search for the SAP Logon icon <img src="./images/S17.png" width=10% height=10%> on your desktop. 
 
 Create a new connection:
 
-<img src="/exercises/ex0/images/S14.png" width=50% height=50%>
+<img src="./images/S14.png" width=50% height=50%>
 
 Add the following details:
 
@@ -120,28 +115,30 @@ Add the following details:
 | IP| s4xp261.tdc.sap.com |        
 | Client | 101 | 
 
-<img src="/exercises/ex0/images/S15.png" width=50% height=50%>
+<img src="./images/S15.png" width=50% height=50%>
 
-<img src="/exercises/ex0/images/S16.png" width=50% height=50%>
+<img src="./images/S16.png" width=50% height=50%>
 
-Now that you have created the new connection let's log in ! 
+Now that you have created the new connection let's log in! 
 | <!-- --> | <!-- --> |
 | --- | --- |
 | Client | 101 | 
+| User | XP261-`<NNN>`. Replace `<NNN>` with your seat number, for example XP261-`045`. |
 
-<img src="/exercises/ex0/images/S18.png" width=50% height=50%>
+<img src="./images/S18.png" width=50% height=50%>
 
-
-
-## Accessing BTP subaccount
+## Accessing your BTP subaccount
 
 On your internet browser navigate to the global account tenant.
 
 https://emea.cockpit.btp.cloud.sap/cockpit/?idp=teched2025-00.accounts.ondemand.com#/globalaccount/4c772782-0751-42ee-93c3-897452fdcb63/ 
 
-After signing in with the credentials from your SAP Cloud Identity Services user, you will find a subbacout that coresonds to your seat number. Example: XP261_001 for seat number 1. 
+Login with the user xp261-`<NNN>`@education.cloud.sap from your subaccount's platform identity provider (https://teched2025-00.accounts.ondemand.com).<br>
+Replace `<NNN>` with your seat number, for example xp261-`016`@education.cloud.sap for sear 16.<br>
+You will find a subbacout that coresonds to your seat number:
 
+<img src="./images/S19.png" width=50% height=50%>
 
 ## Summary
 
-Now that you have logged in your systems, continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Congratulations for completing the initial setup steps. Now get started with exercise [exercise 1](../ex1/README.md), or go back to the [overview](../README.md).
