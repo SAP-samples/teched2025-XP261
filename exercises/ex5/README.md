@@ -1,15 +1,18 @@
 # Exercise 5 - Provisioning to SAP backend systems
 
-In this exercise, we will create...
+In this exercise, we will provision the new users and their authorizations to the SAP target systens. 
 
-## Exercise 3.1 Sub Exercise 1 Description
+## Exercise 5.1 Trigger user and group assignment to the SAP systems
 
 
-## Exercise 3.2 Sub Exercise 2 Description
+1. Navigate to your **Source Systems**.
+2. Choose the source system **Local Directory SAP Provisioning** and navigate to the tab **Jobs**. 
+3. Run the job.
+4. Navigate to Provisioning Logs and check the provisioning status and the details. Y
 
 
 ## Summary
 
-You've now ...
+Congratulations! You have now successfully configured and tested your end to end provisioning flow. 
 
 Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
