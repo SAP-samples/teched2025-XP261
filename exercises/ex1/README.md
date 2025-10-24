@@ -44,7 +44,7 @@ With the previously created two systems we are importing in the Identity Directo
 5. Now save your system. 
 
 
-### Exercise 1.1.2 Create one IPS source system for provisioning to SAP back-end applications
+### Exercise 1.1.3 Create one IPS source system for provisioning to SAP back-end applications
 We will create this system manually. 
 
 1. Click on the **Add** button and then choose the type **Local Identity Directory**
@@ -78,17 +78,52 @@ Now let's proceed with the target systems.
 1.  From the SCI administrative console, tab Identity Provisioning we now choose **Target Systems**.
 <img src="/exercises/ex1/images/S17.png" width=50% height=50%>
 
-2. Save these ([XP261](./images/XP261.json), [S4A](./images/S4A.json) & [Local Directory](./images/LocalDirectory.json)) JSON files locally because you will need to import them in the next step. 
+2. Save the following JSON files locally because you will need to import them in the next steps:  
+* [BestRun Corp IDDS XSUAA](./images/BestRunCorpIDDSXSUAA.json) 
+* [BestRun Corp Tenant IDDS](./images/BestRunCorpTenantIDDS.json) 
+* [BestRunCorp Tenant](./images/BestRunCorpTenant.json)
+* [IdDS to BTPSubaccount XP261](./images/IdDStoBTPSubaccountXP261.json)
+* [S4 on Prem](./images/S4onPrem.json) 
 
+### Exercise 1.2.1 Create one IPS target system for provisioning to Entra ID. 
+1. Click on the **Add** button and then click on Browse and search for the **BestRunCorp Tenant** file that you previously saved.
+2. For the source system, choose from the drop-down menu the **Local Directory** system that you created at earlier. This will ensure that the entries coming from the Identity Directory will be provisioned to this system.
+3. Navigate to the Properties Tab and add the values for the properties that are marked in red, if any.
+4. Save your system. 
 
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+### Exercise 1.2.2 Create two IPS source systems for provisioning to the Local Identity Directory 
+1. Click on the **Add** button and then click on Browse and search for the **BBestRun Corp IDDS XSUAAt** file that you previously saved.
+2. For the source system, choose from the drop-down menu the **BTP Subaccount XP261** system that you created at earlier. This will ensure that the entries coming from the BTP Subaccount will be provisioned to the Local Identity Directory.
+3. Navigate to the Properties Tab and add the values for the properties that are marked in red, if any.
+4. Save your system. 
+5. Click on the **Add** button and then click on Browse and search for the **BBestRun Corp IDDS** file that you previously saved.
+6. For the source system, choose from the drop-down menu the **S4A** system that you created at earlier. This will ensure that the entries coming from S/4 will be provisioned to the Local Identity Directory.
+7. Navigate to the Properties Tab and add the values for the properties that are marked in red, if any.
+8. Save your system. 
 
-## Exercise 1.3 Trigger authorization synchronization  
+### Exercise 1.2.3 Create two IPS source system for provisioning to the SAP back-end applications
+1. Repeat the same procedure from the earlier step for the **IdDS to BTP Subaccount XP261** and the **S4 on Prem** systems. 
+2. For both systems the source is **Local Identity SAP Provisioning**
+3. After you have added the necessary properties, save your systems. 
+
+ 
+ ## Exercise 1.3 Initial Load in SAP Cloud Identity Services
+
+Now that we have all the systems in place, let's run the jobs and get the back-end authorizations in the central storage of the SAP Cloud Identity services. 
+1. Navigate to your **Source Systems**.
+2. Choose the source system **BTP Subaccount XP261** and navigate to the tab **Jobs**. 
+3. Run the job.
+<img src="/exercises/ex1/images/S29.png" width=50% height=50%>
+4. Navigate to Provisioning Logs and check the provisioning status and the details. 
+5. Repeat the same steps for the source system **S4A** 
+6. Now let's check the imported groups. From the SCI administrative console, tab **Users & Authorizations** choose **Groups**.
+<img src="/exercises/ex1/images/S20.png" width=50% height=50%>
+7. Let's search for Groups that start with **TECHED_**. You will notice that the Application Name indicates the source system.
+<img src="/exercises/ex1/images/S21.png" width=50% height=50%>
 
 ## Summary
 
-You've now successfully configured SAP S/4 HANA system and your BTP subaccount as sources for authorizations for SAP SCI. Also, you have prepared these systems for provisioning of users and assignments, as you will see in exercises 5 and 5. 
+You've now successfully configured SAP S/4 HANA system and your BTP subaccount as sources for authorizations for SAP SCI. Also, you have prepared these systems for provisioning of users and assignments, as you will see in exercises 5 and 6. 
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
