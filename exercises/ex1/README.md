@@ -113,7 +113,7 @@ Now that we have all the systems in place, let's run the jobs and get the back-e
 1. Navigate to your **Source Systems**.
 2. Choose the source system **BTP Subaccount XP261** and navigate to the tab **Jobs**. 
 3. Run the job.
-<img src="/exercises/ex1/images/S29.png" width=50% height=50%>
+<img src="/exercises/ex1/images/S19.png" width=50% height=50%>
 4. Navigate to Provisioning Logs and check the provisioning status and the details. 
 5. Repeat the same steps for the source system **S4A** 
 6. Now let's check the imported groups. From the SCI administrative console, tab **Users & Authorizations** choose **Groups**.
