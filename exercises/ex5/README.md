@@ -15,4 +15,3 @@ In this exercise, we will provision the new users and their authorizations to th
 
 Congratulations! You have now successfully configured and tested your end to end provisioning flow. 
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
