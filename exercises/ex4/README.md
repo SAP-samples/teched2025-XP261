@@ -1,4 +1,4 @@
-# Exercise 4 - Assign SAP access package in Microsoft Entra ID
+# Exercise 4 - Assign an access package in Microsoft Entra ID
 
 In this exercise, we will first provision the newly onboarded employee from SuccessFactors to Entra. In Entra, you will create an [access package](https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-access-package-first) that contains the groups that represents the role in the SAP S4A system, and the role collection in BTP. By assigning the user to the access package, the user becomes a member in both groups. These group memberships in Entra will assign the user in the upcoming exercises to the role in S4A and the role collection in BTP.
 

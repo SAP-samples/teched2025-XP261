@@ -1,4 +1,4 @@
-# Exercise 3 - Onboard new employee in SAP SFSF
+# Exercise 3 - Onboard a new employee in SAP SuccessFactors
 
 In this exercise, you will onboard the new employee in the scenario with the name Jane Smit&lt;`NNN`&gt;. `NNN` will be replaced with your seat number, for example `Jane Smith045`.
 

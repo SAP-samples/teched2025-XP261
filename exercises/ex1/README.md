@@ -1,4 +1,4 @@
-# Exercise 1 - Sync SAP backend roles in SAP SCI 
+# Exercise 1 - Import SAP back-end roles in SAP Cloud Identity Services 
 
 In this exercise, we will import the back-en authorizations to IdDS. For this, we will create IPS source and target systems.  
 

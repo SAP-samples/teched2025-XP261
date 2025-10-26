@@ -1,4 +1,4 @@
-# Exercise 5 - Provisioning to SAP backend systems
+# Exercise 5 - Provisioning to SAP back-end systems
 
 In this exercise, we will provision the new users and their authorizations to the SAP target systens. 
 
