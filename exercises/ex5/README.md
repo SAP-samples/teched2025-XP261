@@ -4,11 +4,12 @@ In this exercise, we will provision the new users and their authorizations to th
 
 ## Exercise 5.1 Trigger user and group assignment to the SAP systems
 
+ Navigate to the SCI administrative console that corresponds to your seat. 
 
-1. Navigate to your **Source Systems**.
+1. From the third tab Identity Provisioning please choose **Source Systems**.
 2. Choose the source system **Local Directory SAP Provisioning** and navigate to the tab **Jobs**. 
 3. Run the job.
-4. Navigate to Provisioning Logs and check the provisioning status and the details. Y
+4. Navigate to Provisioning Logs and check the provisioning status and the details. 
 
 
 ## Summary

@@ -3,7 +3,7 @@
 In this exercise, we will import the back-en authorizations to IdDS. For this, we will create IPS source and target systems.  
 
 * We will start by creating source systems for importing authorizations in SAP SCI from the SAP S/4 and the BTP subaccount. 
-* These authorization will be sent via IPS to the Entra ID tenant in [exercise 2](../ex2/README.md). Entra ID is the IdM solution responsible for assignments, therefore we need the SAP authorizations in the Entra ID tenant. For this purpose, we will create a target system that corresponds to Entra ID. 
+* These authorization will be sent via IPS to the Entra ID tenant in [exercise 2](../ex2/README.md). Entra ID is the IdM solution responsible for centrally managing the assignments, therefore we need the SAP authorizations in the Entra ID tenant. For this purpose, we will create a target system that corresponds to Entra ID. 
 * We will create another source system for assignment and user provisioning to the SAP solutions
 * Last but not least, we will create target systems for user and groups assignments 
  
@@ -136,7 +136,7 @@ Now that we have all the systems in place, let's run the jobs and get the back-e
 
 ## Summary
 
-You've now successfully configured SAP S/4 HANA system and your BTP subaccount as sources for authorizations for SAP SCI. Also, you have prepared these systems for provisioning of users and assignments, as you will see in exercises 5 and 6. 
+You've now successfully configured your SAP back-end systems for authorization import for SAP SCI and Microsoft Entra ID. Also, you have prepared these systems for provisioning of users and assignments, as you will see in exercises 5 and 6. 
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
