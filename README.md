@@ -19,7 +19,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Import SAP back-end roles in SAP Cloud Identity Services](exercises/ex1/)
-- [Exercise 2 - Provision SAP backend roles to Microsoft Entra ID](exercises/ex2/)
+- [Exercise 2 - Provision SAP back-end roles to Microsoft Entra ID](exercises/ex2/)
 - [Exercise 3 - Onboard a new employee in SAP SuccessFactors](exercises/ex3/)
 - [Exercise 4 - Assign an access package in Microsoft Entra ID](exercises/ex4/)
 - [Exercise 5 - Provisioning to SAP back-end systems](exercises/ex5/)
