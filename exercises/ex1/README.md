@@ -6,6 +6,10 @@ In this exercise, we will import the back-en authorizations to IdDS. For this, w
 * These authorization will be sent via IPS to the Entra ID tenant in [exercise 2](../ex2/README.md). Entra ID is the IdM solution responsible for assignments, therefore we need the SAP authorizations in the Entra ID tenant. For this purpose, we will create a target system that corresponds to Entra ID. 
 * We will create another source system for assignment and user provisioning to the SAP solutions
 * Last but not least, we will create target systems for user and groups assignments 
+ 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+
 
 ## Exercise 1.1  IPS source systems creation
 
