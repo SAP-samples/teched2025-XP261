@@ -22,11 +22,10 @@ Please follow the steps described in this section to prepare your user account f
 You will get access to the following systems: 
 * [Microsoft EntraID](#accessing-microsoft-entra-id) 
 * [SAP Cloud Identity Services](#accessing-your-sap-cloud-identity-services-tenant)
-* [SAP SuccessFactors](#accessing-SAP-SuccessFactors])
-* [SAP S/4HANA Private Edition](#accessing-SAP-S/4HANA-Private-Edition)
-* [BTP subaccount](#accessing-BTP-subaccount) 
+* [SAP SuccessFactors](#accessing-sap-successfactors-tenant)
+* [SAP S/4HANA Private Edition](#accessing-sap-s4hana-cloud-private-edition)
+* [BTP subaccount](#accessing-your-btp-subaccount)
 
-**Duration: 5 minutes.**
 
 ### Accessing Microsoft Entra ID
 
@@ -49,7 +48,7 @@ You will get access to the following systems:
 | 0.13   | Your user account is now setup for MFA.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
 | 0.14   | Close the browser tab.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
 
-## Accessing your SAP Cloud Identity Services tenant 
+### Accessing your SAP Cloud Identity Services tenant 
 
 1. Search for the internet browser on your computer and navigate to your SCI administrative console. The SAP Cloud Identity Service tenant URL is specific for your seat in the workshop room.<br>
 URL pattern: https://bestrun-`<NN>`.accounts.ondemand.com/admin/<br>
@@ -106,7 +105,7 @@ Replace `<NN>` with your seat number, for example `05` or `31`.
    
    <img src="./images/S12.png" width=50% height=50%>
    
-## Accessing SAP SuccessFactors tenant
+### Accessing SAP SuccessFactors tenant
 Search for the internet browser on your computer and navigate to your SAP SFSF tenant.
 
 Unlike the previous exercise, we will use a shared SAP SFSF tenant 
@@ -115,7 +114,7 @@ URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP062575
 
  <img src="./images/S13.png" width=50% height=50%>
 
-## Accessing SAP S/4HANA Cloud Private Edition
+### Accessing SAP S/4HANA Cloud Private Edition
 
 Search for the SAP Logon icon <img src="./images/S17.png" width=10% height=10%> on your desktop. 
 
@@ -145,7 +144,7 @@ Now that you have created the new connection let's log in!
 
 <img src="./images/S18.png" width=50% height=50%>
 
-## Accessing your BTP subaccount
+### Accessing your BTP subaccount
 
 On your internet browser navigate to the global account tenant.
 
@@ -160,3 +159,4 @@ You will find a subbacout that coresonds to your seat number:
 ## Summary
 
 Congratulations for completing the initial setup steps. Now get started with exercise [exercise 1](../ex1/README.md), or go back to the [overview](../README.md).
+
