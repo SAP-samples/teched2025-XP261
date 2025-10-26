@@ -21,5 +21,5 @@ In this exercise, you will onboard the new employee in the scenario with the nam
 
 You've successfully onboard the new employee. In the next exercise you will provision the user from SuccessFactors to Entra, and assign it to the previously provisioned group from CIS using an access package.
 
-Continue with [Exercise 4](../ex3/README.md).
+Continue with [Exercise 4](../ex4/README.md).
 
