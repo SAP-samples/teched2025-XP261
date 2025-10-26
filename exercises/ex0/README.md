@@ -1,18 +1,36 @@
 # Getting started
+
+We have chosen this scenario because it follows the best practices for integrating an identity management solution into an SAP landscape. Throughout these exercises you will learn how to setup the identity access management flows between a Microsoft Entra ID tenant and your SAP landscape. As per our [reference architecture](https://architecture.learning.sap.com/docs/ref-arch/20c6b29b1e), the SAP Cloud Identity Services tenant are positioned in front of your SAP landscape and serve as the designated Identity and Access Management interface for SAP SaaS integrations. 
+
+SAP Cloud Identity Services (SCI) are a group of services of SAP Business Technology Platform (SAP BTP), which enable you to integrate identity and access management between systems. The goal is to provide a seamless single sign-on experience across systems while ensuring that system and data access are secure. SAP Cloud Identity Services include Identity Authentication (IAS), Identity Provisioning (IPS), Identity Directory (IdDS), and Authorization Management (AMS).
+
+## Table of Contents
+
+1. [Getting started](#getting-started)
+2. [Accessing the landscape](#accessing-the-landscape)
+   - [Accessing Microsoft Entra ID](#accessing-microsoft-entra-id)
+     - [Setup Multifactor Authentication (MFA)](#setup-multifactor-authentication-mfa)
+   - [Accessing your SAP Cloud Identity Services tenant](#accessing-your-sap-cloud-identity-services-tenant)
+   - [Accessing SAP SuccessFactors tenant](#accessing-sap-successfactors-tenant)
+   - [Accessing SAP S/4HANA Cloud Private Edition](#accessing-sap-s4hana-cloud-private-edition)
+   - [Accessing your BTP subaccount](#accessing-your-btp-subaccount)
+3. [Summary](#summary)
+
+## Accessing the landscape
 Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session.
 
 You will get access to the following systems: 
-* [Microsoft EntraID](#-Setup-Multifactor-Authentication(MFA)) 
-* [SAP Cloud Identity Services](#Accessing-SAP-Cloud-Identity-Services)
-* [SAP SuccessFactors](#Accessing-SAP-SuccessFactors])
-* [SAP S/4 HANA Private Edition](#Accessing-SAP-S/4-HANA-Private-Edition)
-* [BTP subaccount](#Accessing-BTP-subaccount) 
+* [Microsoft EntraID](#accessing-microsoft-entra-id) 
+* [SAP Cloud Identity Services](#accessing-your-sap-cloud-identity-services-tenant)
+* [SAP SuccessFactors](#accessing-SAP-SuccessFactors])
+* [SAP S/4HANA Private Edition](#accessing-SAP-S/4HANA-Private-Edition)
+* [BTP subaccount](#accessing-BTP-subaccount) 
 
 **Duration: 5 minutes.**
 
-## Accessing Microsoft Entra ID
+### Accessing Microsoft Entra ID
 
-### Setup Multifactor Authentication (MFA)
+#### Setup Multifactor Authentication (MFA)
 
 | Step   | Description                | Screenshot |
 | :----- | :------------------------- | :--------- |
@@ -88,7 +106,7 @@ Replace `<NN>` with your seat number, for example `05` or `31`.
    
    <img src="./images/S12.png" width=50% height=50%>
    
-## Accessing SAP SuccessFactors  
+## Accessing SAP SuccessFactors tenant
 Search for the internet browser on your computer and navigate to your SAP SFSF tenant.
 
 Unlike the previous exercise, we will use a shared SAP SFSF tenant 
@@ -97,7 +115,7 @@ URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP062575
 
  <img src="./images/S13.png" width=50% height=50%>
 
-## Accessing SAP S/4 HANA Private Edition 
+## Accessing SAP S/4HANA Cloud Private Edition
 
 Search for the SAP Logon icon <img src="./images/S17.png" width=10% height=10%> on your desktop. 
 
