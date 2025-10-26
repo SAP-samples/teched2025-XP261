@@ -9,7 +9,16 @@ In this exercise, we will import the back-en authorizations to IdDS. For this, w
  
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
-
+- [Exercise 1.1 IPS source systems creation](#exercise-11-ips-source-systems-creation)
+    - [Exercise 1.1.1 Create IPS source system for syncing authorizations from back-end](#exercise-111-create-ips-source-system-for-syncing-authorizations-from-back-end)
+    - [Exercise 1.1.2 Create one IPS source system for syncing authorizations to Entra ID](#exercise-112-create-one-ips-source-system-for-syncing-authorizations-to-entra-id)
+    - [Exercise 1.1.3 Create one IPS source system for provisioning to SAP back-end applications](#exercise-113-create-one-ips-source-system-for-provisioning-to-sap-back-end-applications)
+- [Exercise 1.2 IPS target systems creation](#exercise-12-ips-target-systems-creation)
+    - [Exercise 1.2.1 Create one IPS target system for provisioning to Entra ID](#exercise-121-create-one-ips-target-system-for-provisioning-to-entra-id)
+    - [Exercise 1.2.2 Create two IPS source systems for provisioning to the Local Identity Directory](#exercise-122-create-two-ips-source-systems-for-provisioning-to-the-local-identity-directory)
+    - [Exercise 1.2.3 Create two IPS source system for provisioning to the SAP back-end applications](#exercise-123-create-two-ips-source-system-for-provisioning-to-the-sap-back-end-applications)
+- [Exercise 1.3 Initial Load in SAP Cloud Identity Services](#exercise-13-initial-load-in-sap-cloud-identity-services)
+- [Summary](#summary)
 
 ## Exercise 1.1  IPS source systems creation
 
