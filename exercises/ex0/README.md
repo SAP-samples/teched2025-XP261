@@ -18,12 +18,7 @@ SAP Cloud Identity Services (SCI) are a group of services of SAP Business Techno
 ## Accessing the landscape
 Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session.
 
-You will get access to the following systems: 
-* [Microsoft EntraID](#accessing-microsoft-entra-id) 
-* [SAP Cloud Identity Services](#accessing-your-sap-cloud-identity-services-tenant)
-* [SAP SuccessFactors](#accessing-sap-successfactors-tenant)
-* [SAP S/4HANA Private Edition](#accessing-sap-s4hana-cloud-private-edition)
-* [BTP subaccount](#accessing-your-btp-subaccount)
+You will get access to the following systems:  [Microsoft EntraID](#accessing-microsoft-entra-id), [SAP Cloud Identity Services](#accessing-your-sap-cloud-identity-services-tenant), [SAP SuccessFactors](#accessing-sap-successfactors-tenant), [SAP S/4HANA Private Edition](#accessing-sap-s4hana-cloud-private-edition) and [BTP subaccount](#accessing-your-btp-subaccount). 
 
 
 ### Accessing Microsoft Entra ID

@@ -20,7 +20,12 @@ In this exercise, we will import the back-en authorizations to IdDS. For this, w
 - [Exercise 1.3 Initial Load in SAP Cloud Identity Services](#exercise-13-initial-load-in-sap-cloud-identity-services)
 - [Summary](#summary)
 
-## Exercise 1.1  IPS source systems creation
+## Exercise 1.1  Systems for SAP BTP onboarding 
+## Exercise 1.2  Systems for SAP S/4HANA Cloud Private Edition onboarding 
+## Exercise 1.2  Systems for provisioning to SAP back-end applications 
+## Exercise 1.4  Systems for Microsoft Entra ID import  
+
+
 
 ### Exercise 1.1.1 Create IPS source system for syncing authorizations from back-end
 
