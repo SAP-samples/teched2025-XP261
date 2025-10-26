@@ -18,8 +18,8 @@ To follow all exercises in this session, please make sure that you have a mobile
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - Sync SAP back-end roles in the SAP Cloud Identity Services](exercises/ex1/)
-- [Exercise 2 - Sync SAP back-end roles in Microsoft Entra ID](exercises/ex2/)
+- [Exercise 1 - Import SAP back-end roles in SAP Cloud Identity Services](exercises/ex1/)
+- [Exercise 2 - Provision SAP backend roles to Microsoft Entra ID](exercises/ex2/)
 - [Exercise 3 - Onboard a new employee in SAP SuccessFactors](exercises/ex3/)
 - [Exercise 4 - Assign an access package in Microsoft Entra ID](exercises/ex4/)
 - [Exercise 5 - Provisioning to SAP back-end systems](exercises/ex5/)
