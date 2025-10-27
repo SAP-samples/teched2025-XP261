@@ -1,0 +1,221 @@
+{
+    "id": "4eee6ea4-afde-4543-b4f7-e8fa4e685f5b",
+    "connectorTypeString": "AZURE_AD",
+    "accessMode": "WRITE",
+    "destinationName": "",
+    "relatedSystems": [
+        "Local Directory"
+    ],
+    "gitAllowedExpressions": [],
+    "gitDisallowedExpressions": [],
+    "emailSubscribers": [],
+    "name": "Non-SAP import target",
+    "tenantId": "teched2025-00",
+    "state": "ENABLED",
+    "systemManagementType": "CUSTOMER_MANAGED",
+    "properties": {
+        "aad.domain.name": "bestruncorp.onmicrosoft.com",
+        "aad.group.prefix": "TECHED_",
+        "Authentication": "BasicAuthentication",
+        "ips.application.id.s4": "",
+        "ips.application.id.xsuaa": "",
+        "ips.trace.deleted.entity": "true",
+        "ips.trace.failed.entity.content": "true",
+        "ips.trace.skipped.entity": "true",
+        "oauth.resource.name": "https://graph.microsoft.com",
+        "OAuth2TokenServiceURL": "",
+        "ProxyType": "Internet",
+        "Type": "HTTP",
+        "URL": "https://graph.microsoft.com",
+        "User": ""
+    },
+    "encryptedProperties": {
+        "Password": null
+    },
+    "automaticOutboundCertificateRenew": false,
+    "transformationChanged": true,
+    "readTransformationChanged": false,
+    "writeTransformationChanged": false,
+    "fromImport": false,
+    "transformation": {
+        "user": {
+            "ignore": true,
+            "condition": "('%aad.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%aad.group.prefix%.*/)] empty false)",
+            "mappings": [
+                {
+                    "sourcePath": "$.onPremisesImmutableId",
+                    "optional": true,
+                    "targetPath": "$.onPremisesImmutableId"
+                },
+                {
+                    "sourcePath": "$.active",
+                    "optional": true,
+                    "targetPath": "$.accountEnabled"
+                },
+                {
+                    "sourcePath": "$.name.givenName",
+                    "optional": true,
+                    "targetPath": "$.mailNickname"
+                },
+                {
+                    "sourcePath": "$.displayName",
+                    "optional": true,
+                    "targetPath": "$.displayName"
+                },
+                {
+                    "sourcePath": "$.name.givenName",
+                    "optional": true,
+                    "targetPath": "$.givenName"
+                },
+                {
+                    "sourcePath": "$.name.familyName",
+                    "optional": true,
+                    "targetPath": "$.surname"
+                },
+                {
+                    "sourcePath": "$.addresses[0].locality",
+                    "optional": true,
+                    "targetPath": "$.city"
+                },
+                {
+                    "sourcePath": "$.addresses[0].country",
+                    "optional": true,
+                    "targetPath": "$.country"
+                },
+                {
+                    "sourcePath": "$.userName",
+                    "targetPath": "$.userPrincipalName",
+                    "scope": "createEntity",
+                    "functions": [
+                        {
+                            "function": "concatString",
+                            "suffix": "@%aad.domain.name%"
+                        }
+                    ]
+                },
+                {
+                    "constant": "true",
+                    "targetPath": "$.accountEnabled",
+                    "scope": "createEntity"
+                },
+                {
+                    "sourcePath": "$.active",
+                    "optional": true,
+                    "targetPath": "$.accountEnabled",
+                    "scope": "createEntity"
+                },
+                {
+                    "sourcePath": "$.name.givenName",
+                    "targetPath": "$.mailNickname",
+                    "scope": "createEntity"
+                },
+                {
+                    "sourcePath": "$.displayName",
+                    "targetPath": "$.displayName",
+                    "scope": "createEntity"
+                },
+                {
+                    "targetPath": "$.passwordProfile.password",
+                    "scope": "createEntity",
+                    "functions": [
+                        {
+                            "function": "randomPassword",
+                            "passwordLength": 16,
+                            "minimumNumberOfLowercaseLetters": 1,
+                            "minimumNumberOfUppercaseLetters": 1,
+                            "minimumNumberOfDigits": 1,
+                            "minimumNumberOfSpecialSymbols": 0
+                        }
+                    ]
+                },
+                {
+                    "constant": false,
+                    "targetPath": "$.passwordProfile.forceChangePasswordNextSignIn",
+                    "scope": "createEntity"
+                }
+            ]
+        },
+        "group": {
+            "condition": "isAttributeWithOptionalPrefix($.displayName, aad.group.prefix) && ($['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false)",
+            "mappings": [
+                {
+                    "sourceVariable": "entityIdTargetSystem",
+                    "targetPath": "$.id"
+                },
+                {
+                    "sourcePath": "$.displayName",
+                    "optional": true,
+                    "targetPath": "$.displayName"
+                },
+                {
+                    "sourcePath": "$.description",
+                    "optional": true,
+                    "targetPath": "$.description"
+                },
+                {
+                    "sourcePath": "$.allowExternalSenders",
+                    "optional": true,
+                    "targetPath": "$.allowExternalSenders"
+                },
+                {
+                    "sourcePath": "$.autoSubscribeNewMembers",
+                    "optional": true,
+                    "targetPath": "$.autoSubscribeNewMembers"
+                },
+                {
+                    "sourcePath": "$.isSubscribedByMail",
+                    "optional": true,
+                    "targetPath": "$.isSubscribedByMail"
+                },
+                {
+                    "sourcePath": "$.visibility",
+                    "optional": true,
+                    "targetPath": "$.visibility"
+                },
+                {
+                    "sourcePath": "$.securityEnabled",
+                    "optional": true,
+                    "targetPath": "$.securityEnabled"
+                },
+                {
+                    "sourcePath": "$.mailEnabled",
+                    "optional": true,
+                    "targetPath": "$.mailEnabled"
+                },
+                {
+                    "sourcePath": "$.displayName",
+                    "targetPath": "$.displayName",
+                    "scope": "createEntity"
+                },
+                {
+                    "sourcePath": "$.displayName",
+                    "targetPath": "$.mailNickname",
+                    "scope": "createEntity",
+                    "functions": [
+                        {
+                            "function": "replaceString",
+                            "target": " ",
+                            "replacement": ""
+                        }
+                    ]
+                },
+                {
+                    "constant": true,
+                    "targetPath": "$.mailEnabled",
+                    "scope": "createEntity"
+                },
+                {
+                    "constant": false,
+                    "targetPath": "$.securityEnabled",
+                    "scope": "createEntity"
+                },
+                {
+                    "constant": "Unified",
+                    "targetPath": "$.groupTypes[0]",
+                    "scope": "createEntity"
+                }
+            ]
+        }
+    },
+    "gitFetchAllowed": false
+}

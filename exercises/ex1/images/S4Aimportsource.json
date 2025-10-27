@@ -1,0 +1,74 @@
+{
+    "id": "db47bf8b-ea67-4f42-9b4f-c6d5c8aa4493",
+    "connectorTypeString": "AS_ABAP",
+    "accessMode": "READ",
+    "destinationName": "ABAP_S4A",
+    "gitAllowedExpressions": [],
+    "gitDisallowedExpressions": [],
+    "emailSubscribers": [],
+    "name": "S4A import source",
+    "tenantId": "teched2025-00",
+    "state": "ENABLED",
+    "systemManagementType": "CUSTOMER_MANAGED",
+    "properties": {
+        "abap.role.name.filter": "PROCUREMENT_ADMIN",
+        "abap.role.prefix": "TECHED_S4A_",
+        "ips.application.id": "",
+        "ips.trace.failed.entity.content": "false"
+    },
+    "encryptedProperties": {},
+    "automaticOutboundCertificateRenew": false,
+    "transformationChanged": true,
+    "readTransformationChanged": false,
+    "writeTransformationChanged": false,
+    "fromImport": false,
+    "gitFetchAllowed": false,
+    "transformation": {
+        "group": {
+            "mappings": [
+                {
+                    "sourcePath": "$.ROLE_NAME",
+                    "targetVariable": "entityIdSourceSystem"
+                },
+                {
+                    "sourcePath": "$.ROLE_NAME",
+                    "targetPath": "$.displayName",
+                    "functions": [
+                        {
+                            "function": "concatString",
+                            "condition": "'%abap.role.prefix%' !== 'null'",
+                            "prefix": "%abap.role.prefix%"
+                        }
+                    ]
+                },
+                {
+                    "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
+                    "targetPath": "$.schemas[0]"
+                },
+                {
+                    "sourcePath": "$.USERLIST[*].USERNAME",
+                    "preserveArrayWithSingleElement": true,
+                    "optional": true,
+                    "targetPath": "$.members[?(@.value)]"
+                },
+                {
+                    "condition": "'%ips.application.id%' !== 'null'",
+                    "constant": "%ips.application.id%",
+                    "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+                },
+                {
+                    "constant": "authorization",
+                    "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+                },
+                {
+                    "constant": "readWrite",
+                    "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+                },
+                {
+                    "sourcePath": "$.ROLE_NAME",
+                    "targetPath": "$.externalId"
+                }
+            ]
+        }
+    }
+}

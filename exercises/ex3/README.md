@@ -16,6 +16,16 @@ In this exercise, you will onboard the new employee in the scenario with the nam
 | 3.9    | <b>Click</b> the link <b>View Profile of Jane Smith&lt;`NNN`&gt;</b>.|<a href="./images/3-9.jpg" target="_blank"><img src="./images/3-9.jpg" width="250"/></a>|
 | 3.10   | Remeber the person Id <b>jsmith&lt;`NNN`&gt;</b> of the new employee.<br><br>You will need it in the next exercise.|<a href="./images/3-10.jpg" target="_blank"><img src="./images/3-10.jpg" width="250"/></a>|
 
+<img src="/exercises/ex3/images/S3-2.png">
+<img src="/exercises/ex3/images/S3-3.png">
+<img src="/exercises/ex3/images/S3-4.png">
+<img src="/exercises/ex3/images/S3-5.png">
+<img src="/exercises/ex3/images/S3-6.png">
+<img src="/exercises/ex3/images/S3-7.png">
+<img src="/exercises/ex3/images/S3-8.png">
+<img src="/exercises/ex3/images/S3-9.png">
+<img src="/exercises/ex3/images/S3-10.png">
+
 
 ## Summary
 
