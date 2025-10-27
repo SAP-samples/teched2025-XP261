@@ -13,7 +13,7 @@
     "properties": {
         "abap.role.name.filter": "PROCUREMENT_ADMIN",
         "abap.role.prefix": "TECHED_S4A_",
-        "ips.application.id": "ebe432d9-c565-48a4-be25-9a41a1b7ab64",
+        "ips.application.id": "",
         "ips.trace.failed.entity.content": "false"
     },
     "encryptedProperties": {},
