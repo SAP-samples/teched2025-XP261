@@ -58,6 +58,14 @@ The values for the properties *ips.application.id.s4* and *ips.application.id.xs
 
 <img src="/exercises/ex2/images/S22-2.png"> 
 
+5. Log in your Microsoft Entra ID tenant and check the imported groups. Filter by **TECHED_**. 
+
+<img src="/exercises/ex2/images/S22-3.png"> 
+
+Notice that the number and name of groups is similar to the one on the SCI tenant: 
+
+<img src="/exercises/ex2/images/S22-4.png"> 
+
 ## Summary
 
 You've now provisioned the SAP groups to your identity management solution. Continue with the next exercise to assign these authorizations to users. 
