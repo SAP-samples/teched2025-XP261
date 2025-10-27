@@ -14,7 +14,7 @@ In this exercise, we will provision the new users and their authorizations to th
 2. Choose the source system **Local Directory SAP Provisioning** and navigate to the tab **Jobs**. 
 3. Run the job.
 4. Navigate to Provisioning Logs and check the provisioning status and the details. 
-
+5. Check in the back-end systems that the users are created and they have the assigned authorizations. 
 
 ## Summary
 

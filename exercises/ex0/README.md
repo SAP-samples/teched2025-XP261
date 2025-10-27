@@ -116,7 +116,7 @@ You will find a subbacout that coresonds to your seat number:
  
  <img src="./images/S0-12.png" >
 
- In exercise 5, this role will be assigned in Micrososft Entra to a newly created employee. 
+ In exercise 5, this role collection will be assigned in Micrososft Entra to a newly created employee. 
 
 ## Summary
 
