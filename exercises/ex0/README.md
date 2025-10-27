@@ -4,19 +4,19 @@ We have chosen this scenario because it follows the best practices for integrati
 
 SAP Cloud Identity Services (SCI) are a group of services of SAP Business Technology Platform (SAP BTP), which enable you to integrate identity and access management between systems. The goal is to provide a seamless single sign-on experience across systems while ensuring that system and data access are secure. SAP Cloud Identity Services include Identity Authentication (IAS), Identity Provisioning (IPS), Identity Directory (IdDS), and Authorization Management (AMS).
 
-- [Accessing the landscape](#accessing-the-landscape)
-   - [Accessing Microsoft Entra ID](#accessing-microsoft-entra-id)
-      - [Setup Multifactor Authentication (MFA)](#setup-multifactor-authentication-mfa)
-   - [Accessing your SAP Cloud Identity Services tenant](#accessing-your-sap-cloud-identity-services-tenant)
-   - [Accessing SAP SuccessFactors tenant](#accessing-sap-successfactors-tenant)
-   - [Accessing SAP S/4HANA Cloud Private Edition](#accessing-sap-s4hana-cloud-private-edition)
-   - [Accessing your BTP subaccount](#accessing-your-btp-subaccount)
-- [Summary](#summary)
+## Table of Contents
+[Accessing the landscape](#accessing-the-landscape)
+[Summary](#summary)
 
 ## Accessing the landscape
 Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session.
 
-You will get access to the following systems:  [Microsoft EntraID](#accessing-microsoft-entra-id), [SAP Cloud Identity Services](#accessing-your-sap-cloud-identity-services-tenant), [SAP SuccessFactors](#accessing-sap-successfactors-tenant), [SAP S/4HANA Private Edition](#accessing-sap-s4hana-cloud-private-edition) and the [BTP subaccount](#accessing-your-btp-subaccount). 
+You will get access to the following systems:  
+* [Microsoft EntraID](#accessing-microsoft-entra-id) 
+* [SAP Cloud Identity Services](#accessing-your-sap-cloud-identity-services-tenant) 
+* [SAP SuccessFactors](#accessing-sap-successfactors-tenant) 
+* [SAP S/4HANA Private Edition](#accessing-sap-s4hana-cloud-private-edition)  
+* [BTP subaccount](#accessing-your-btp-subaccount). 
 
 
 ### Accessing Microsoft Entra ID

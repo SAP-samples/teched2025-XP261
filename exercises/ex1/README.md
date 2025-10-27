@@ -8,16 +8,11 @@ In this exercise, we will import the back-en authorizations to IdDS. For this, w
  
 
 ## Table of Contents
-- [1.1 IPS source systems creation](#exercise-11-ips-source-systems-creation)
-    - [Exercise 1.1.1 Create IPS source system for syncing authorizations from back-end](#exercise-111-create-ips-source-system-for-syncing-authorizations-from-back-end)
-    - [Exercise 1.1.2 Create one IPS source system for syncing authorizations to Entra ID](#exercise-112-create-one-ips-source-system-for-syncing-authorizations-to-entra-id)
-    - [Exercise 1.1.3 Create one IPS source system for provisioning to SAP back-end applications](#exercise-113-create-one-ips-source-system-for-provisioning-to-sap-back-end-applications)
-- [Exercise 1.2 IPS target systems creation](#exercise-12-ips-target-systems-creation)
-    - [Exercise 1.2.1 Create one IPS target system for provisioning to Entra ID](#exercise-121-create-one-ips-target-system-for-provisioning-to-entra-id)
-    - [Exercise 1.2.2 Create two IPS source systems for provisioning to the Local Identity Directory](#exercise-122-create-two-ips-source-systems-for-provisioning-to-the-local-identity-directory)
-    - [Exercise 1.2.3 Create two IPS source system for provisioning to the SAP back-end applications](#exercise-123-create-two-ips-source-system-for-provisioning-to-the-sap-back-end-applications)
-- [Exercise 1.3 Initial Load in SAP Cloud Identity Services](#exercise-13-initial-load-in-sap-cloud-identity-services)
-- [Summary](#summary)
+[1.1 Download the JSON files](#11--download-the-json-files)
+[1.2 SAP BTP onboarding ](#12--sap-btp-onboarding)
+[1.3  SAP S/4HANA Cloud Private Edition onboarding ](#13--sap-s4hana-cloud-private-edition-onboarding)
+[1.4  Systems for provisioning to SAP back-end applications](#14--systems-for-provisioning-to-sap-back-end-applications)
+[Summary](#summary)
 
 ## 1.1  Download the JSON files 
 
@@ -37,14 +32,14 @@ Press on **Download Raw File** in the window that will open.
 
 <img src="/exercises/ex1/images/S11.png">
 
-## Exercise 1.2  SAP BTP onboarding 
+## 1.2  SAP BTP onboarding 
 
 1. Navigate to the SCI administrative console that corresponds to your seat. From the third tab **Identity Provisioning** please choose **Source Systems**.
 <img src="/exercises/ex1/images/S121.png">
 
 2. Click on the **Add** button and then click on Browse and search for the **BTP CF import source** file that you previously saved.
 
-<img src="/exercises/ex1/images/S122.png">
+<img src="/exercises/ex1/images/S1222.png">
 
 3. Navigate  to the third tab  **Properties** tab  
 <img src="/exercises/ex1/images/S123.png">
@@ -94,7 +89,7 @@ Click on the result and inspect the details.Afterwards navigate from the console
 <img src="/exercises/ex1/images/S132.png">
 
 
-## Exercise 1.3  SAP S/4HANA Cloud Private Edition onboarding 
+## 1.3  SAP S/4HANA Cloud Private Edition onboarding 
 
 1. In your SCI administrative console tab Identity Provisioning, please choose **Source Systems**.
 
@@ -132,7 +127,7 @@ For the property *ips.application.id*, similarly with exercise 1.2 step 3, you w
 12. Let's search for Groups that start with **TECHED_**. You will notice that the Application Name indicates the source system.
 <img src="/exercises/ex1/images/S13-7.png" >
 
-## Exercise 1.4  Systems for provisioning to SAP back-end applications 
+## 1.4  Systems for provisioning to SAP back-end applications 
 Up until now we have created the connections between SCI and back-end systems for authorization import. Any subsequent user creation and authorization assignment will be performed centrally by Microsoft Entra ID in the SCI and afterwards provisioned to the back-end. It is a bad practice to perform authorization assignments in the back-end systems because the whole landscape will be out of sync. 
 
 In this exercise we will create the necessary connections between SCI and the back-end systems for subsequent provisioning. For this we will need a source system representing the central storage of the SCI and two target systems representing the back-end systems. We will create the source system manually and the target systems, from imported files as we did till now.
@@ -140,10 +135,10 @@ In this exercise we will create the necessary connections between SCI and the ba
 1. In your SCI administrative console tab Identity Provisioning, please choose **Source Systems**. Click on the **Add** button and then choose the type **Local Identity Directory**
 Give your system a meaningful name. Our suggestion is *SAP provisioning source*.
 
-<img src="/exercises/ex1/images/S4-0.png" >
+<img src="/exercises/ex1/images/S14-0.png" >
 
 2. Navigate to the Properties tab and manually add the following standard properties.
-<img src="/exercises/ex1/images/S4-1.png" >
+<img src="/exercises/ex1/images/S14-1.png" >
 
 
 | Property Name | Property Value | 
@@ -201,3 +196,6 @@ You've now successfully configured your SAP back-end systems for authorization i
 
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
 
+
+
+[def]: #exercise-11-ips-source-systems-creation

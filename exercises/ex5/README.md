@@ -2,7 +2,11 @@
 
 In this exercise, we will provision the new users and their authorizations to the SAP target systens. 
 
-## Exercise 5.1 Trigger user and group assignment to the SAP systems
+## Table of Contents
+[5.1 Trigger user and group assignment to the SAP systems](#51-trigger-user-and-group-assignment-to-the-sap-systems)
+[Summary](#summary)
+
+## 5.1 Trigger user and group assignment to the SAP systems
 
  Navigate to the SCI administrative console that corresponds to your seat. 
 
