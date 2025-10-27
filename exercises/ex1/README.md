@@ -8,11 +8,11 @@ In this exercise, we will import the back-en authorizations to IdDS. For this, w
  
 
 ## Table of Contents
-[1.1 Download the JSON files](#11--download-the-json-files)
-[1.2 SAP BTP onboarding ](#12--sap-btp-onboarding)
-[1.3  SAP S/4HANA Cloud Private Edition onboarding ](#13--sap-s4hana-cloud-private-edition-onboarding)
-[1.4  Systems for provisioning to SAP back-end applications](#14--systems-for-provisioning-to-sap-back-end-applications)
-[Summary](#summary)
+- [1.1 Download the JSON files](#11--download-the-json-files)
+- [1.2 SAP BTP onboarding ](#12--sap-btp-onboarding)
+- [1.3  SAP S/4HANA Cloud Private Edition onboarding ](#13--sap-s4hana-cloud-private-edition-onboarding)
+- [1.4  Systems for provisioning to SAP back-end applications](#14--systems-for-provisioning-to-sap-back-end-applications)
+- [Summary](#summary)
 
 ## 1.1  Download the JSON files 
 

@@ -3,9 +3,9 @@
 In the previous exercise we have all the necessary authorizations from our backend systems. Now we have to synchronize them to the identity management solution. In this scenario the identity management solution is your Entra ID tenant.
 
 ## Table of Contents
-[2.1  Systems for Microsoft Entra ID import](#21--systems-for-microsoft-entra-id-import)
-[2.2 Trigger groups import to Entra ID](#22-trigger-groups-import-to-entra-id)
-[Summary](#summary)
+- [2.1  Systems for Microsoft Entra ID import](#21--systems-for-microsoft-entra-id-import)
+- [2.2 Trigger groups import to Entra ID](#22-trigger-groups-import-to-entra-id)
+- [Summary](#summary)
 
 
 ## 2.1  Systems for Microsoft Entra ID import  
