@@ -12,7 +12,7 @@ In the previous exercise we have all the necessary authorizations from our backe
 
 ### 2.1.1 Create one IPS source system for syncing authorizations to Entra ID
 
-With the previously created systems we are importing in the Identity Directory all the authorizations from the SAP back-end applications. Because we want to sync these SAP authorization to Entra ID, we will create a dedicated source system representing the IdDS. 
+With the previously created systems we are importing in the Identity Directory all the authorizations from the SAP back-end applications. Because we want to sync these SAP authorization to Entra ID, we will create a dedicated source system representing the IdDS.
 
 1. Navigate to the SCI administrative console and from the third tab Identity Provisioning please choose **Source Systems**. Click on the **Add** button and then click on Browse and search for the **Non-SAP import source** file. 
 
