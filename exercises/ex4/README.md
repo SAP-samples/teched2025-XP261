@@ -28,6 +28,15 @@ In this exercise, we will first provision the newly onboarded employee from Succ
 | 4.22   | Click **Add**. |<a href="./images/4-22.jpg" target="_blank"><img src="./images/4-22.jpg" width="250"/></a>|
 | 4.23   | Click **Refresh**. Your user should be listed in the assignments for your access package. |<a href="./images/4-23.jpg" target="_blank"><img src="./images/4-23.jpg" width="250"/></a>|
 
+
+<img src="/exercises/ex4/images/S4-1.png">
+<img src="/exercises/ex4/images/S4-2.png">
+<img src="/exercises/ex4/images/S4-3.png">
+<img src="/exercises/ex4/images/S4-4.png">
+<img src="/exercises/ex4/images/S4-5.png">
+<img src="/exercises/ex4/images/S4-6.png">
+
+
 ## Summary
 
 You've now provisioned the new employee to Entra, created an access package for her, and assigned her to the package. This made the new employee Jane Smith a member in the group representing the role in SAP S/4 system, and a member in the group representing the role collection in the BTP subaccount.
