@@ -1,22 +1,30 @@
 {
-    "id": "db47bf8b-ea67-4f42-9b4f-c6d5c8aa4493",
-    "connectorTypeString": "AS_ABAP",
+    "id": "a03f12e6-446c-4f6a-87ad-d3547c51bf7e",
+    "connectorTypeString": "XSUAA",
     "accessMode": "READ",
-    "destinationName": "ABAP_S4A",
+    "destinationName": "",
     "gitAllowedExpressions": [],
     "gitDisallowedExpressions": [],
     "emailSubscribers": [],
-    "name": "S4A",
+    "name": "BTP CF import source",
     "tenantId": "teched2025-00",
     "state": "ENABLED",
     "systemManagementType": "CUSTOMER_MANAGED",
     "properties": {
-        "abap.role.name.filter": "Z_SAP_BC_EPM_DEMO_XP261_000",
-        "abap.role.prefix": "TECHED_S4A_",
-        "ips.application.id": "ebe432d9-c565-48a4-be25-9a41a1b7ab64",
-        "ips.trace.failed.entity.content": "false"
+        "Authentication": "BasicAuthentication",
+        "ips.application.id": "",
+        "ips.trace.failed.entity.content": "false",
+        "ips.trace.skipped.entity.content": "false",
+        "OAuth2TokenServiceURL": "",
+        "ProxyType": "Internet",
+        "Type": "HTTP",
+        "URL": "https://api.authentication.eu10.hana.ondemand.com",
+        "User": "",
+        "xsuaa.group.prefix": "TECHED_BTP_"
     },
-    "encryptedProperties": {},
+    "encryptedProperties": {
+        "Password": null
+    },
     "automaticOutboundCertificateRenew": false,
     "transformationChanged": true,
     "readTransformationChanged": false,
@@ -24,31 +32,38 @@
     "fromImport": false,
     "transformation": {
         "group": {
+            "condition": "$.displayName !== 'Subaccount Administrator'",
             "mappings": [
                 {
-                    "sourcePath": "$.ROLE_NAME",
+                    "sourcePath": "$.id",
                     "targetVariable": "entityIdSourceSystem"
                 },
                 {
-                    "sourcePath": "$.ROLE_NAME",
+                    "sourcePath": "$.displayName",
                     "targetPath": "$.displayName",
                     "functions": [
                         {
                             "function": "concatString",
-                            "condition": "'%abap.role.prefix%' !== 'null'",
-                            "prefix": "%abap.role.prefix%"
+                            "condition": "'%xsuaa.group.prefix%' !== 'null'",
+                            "prefix": "%xsuaa.group.prefix%"
                         }
                     ]
                 },
                 {
-                    "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
-                    "targetPath": "$.schemas[0]"
+                    "sourcePath": "$.description",
+                    "optional": true,
+                    "targetPath": "$.description"
                 },
                 {
-                    "sourcePath": "$.USERLIST[*].USERNAME",
+                    "sourcePath": "$.zoneId",
+                    "optional": true,
+                    "targetPath": "$.zoneId"
+                },
+                {
+                    "sourcePath": "$.members",
                     "preserveArrayWithSingleElement": true,
                     "optional": true,
-                    "targetPath": "$.members[?(@.value)]"
+                    "targetPath": "$.members"
                 },
                 {
                     "condition": "'%ips.application.id%' !== 'null'",
@@ -60,12 +75,9 @@
                     "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
                 },
                 {
-                    "constant": "readWrite",
+                    "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+                    "optional": true,
                     "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
-                },
-                {
-                    "sourcePath": "$.ROLE_NAME",
-                    "targetPath": "$.externalId"
                 }
             ]
         }

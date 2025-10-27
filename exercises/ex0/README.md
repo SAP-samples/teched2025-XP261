@@ -143,7 +143,7 @@ On your internet browser navigate to the global account tenant.
 https://emea.cockpit.btp.cloud.sap/cockpit/?idp=teched2025-00.accounts.ondemand.com#/globalaccount/4c772782-0751-42ee-93c3-897452fdcb63/ 
 
 Login with the user xp261-`<NNN>`@education.cloud.sap from your subaccount's platform identity provider (https://teched2025-00.accounts.ondemand.com).<br>
-Replace `<NNN>` with your seat number, for example xp261-`016`@education.cloud.sap for sear 16.<br>
+Replace `<NNN>` with your seat number, for example xp261-`016`@education.cloud.sap for seat 16.<br>
 You will find a subbacout that coresonds to your seat number:
 
 <img src="./images/S19.png" width=50% height=50%>

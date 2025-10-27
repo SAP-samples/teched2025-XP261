@@ -1,0 +1,253 @@
+{
+    "id": "28b5da16-170c-4f80-bdf3-d9bcded065bd",
+    "connectorTypeString": "AS_ABAP",
+    "accessMode": "WRITE",
+    "destinationName": "ABAP_S4A",
+    "relatedSystems": [
+        "Local Directory SAP Provisioning"
+    ],
+    "gitAllowedExpressions": [],
+    "gitDisallowedExpressions": [],
+    "emailSubscribers": [],
+    "name": "S4A provisioning target",
+    "tenantId": "teched2025-00",
+    "state": "ENABLED",
+    "systemManagementType": "CUSTOMER_MANAGED",
+    "properties": {
+        "abap.role.prefix": "TECHED_S4A_",
+        "ips.application.id": "",
+        "ips.trace.failed.entity.content": "true"
+    },
+    "encryptedProperties": {},
+    "automaticOutboundCertificateRenew": false,
+    "transformationChanged": false,
+    "readTransformationChanged": false,
+    "writeTransformationChanged": false,
+    "fromImport": false,
+    "transformation": {
+        "user": {
+            "condition": "(($.emails EMPTY true) || isValidEmail($.emails[0].value)) && (('%abap.role.prefix%' === 'null') || ($.groups[?(@.display =~ /%abap.role.prefix%.*/)] empty false))",
+            "mappings": [
+                {
+                    "sourceVariable": "entityIdTargetSystem",
+                    "targetPath": "$.USERNAME"
+                },
+                {
+                    "sourcePath": "$.userName",
+                    "targetPath": "$.USERNAME"
+                },
+                {
+                    "sourcePath": "$.externalId",
+                    "optional": true,
+                    "targetPath": "$.ALIAS.USERALIAS",
+                    "defaultValue": ""
+                },
+                {
+                    "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+                    "optional": true,
+                    "targetPath": "$.SAPUSER_UUID.SAP_UID"
+                },
+                {
+                    "condition": "$.emails[?(@.primary == true)].value != []",
+                    "sourcePath": "$.emails[?(@.primary == true)].value",
+                    "preserveArrayWithSingleElement": false,
+                    "optional": true,
+                    "targetPath": "$.ADDRESS.E_MAIL"
+                },
+                {
+                    "condition": "$.emails[?(@.type == 'work')].value != []",
+                    "sourcePath": "$.emails[?(@.type == 'work')].value",
+                    "preserveArrayWithSingleElement": true,
+                    "optional": true,
+                    "targetPath": "$.ADDRESS.E_MAIL",
+                    "functions": [
+                        {
+                            "function": "elementAt",
+                            "index": 0
+                        }
+                    ]
+                },
+                {
+                    "sourcePath": "$.emails[*].value",
+                    "preserveArrayWithSingleElement": true,
+                    "optional": true,
+                    "targetPath": "$.ADDSMTP[?(@.E_MAIL)]"
+                },
+                {
+                    "sourcePath": "$.name.familyName",
+                    "targetPath": "$.ADDRESS.LASTNAME"
+                },
+                {
+                    "sourcePath": "$.name.givenName",
+                    "optional": true,
+                    "targetPath": "$.ADDRESS.FIRSTNAME"
+                },
+                {
+                    "sourcePath": "$.name.middleName",
+                    "optional": true,
+                    "targetPath": "$.ADDRESS.MIDDLENAME"
+                },
+                {
+                    "sourcePath": "$.nickName",
+                    "optional": true,
+                    "targetPath": "$.ADDRESS.NICKNAME"
+                },
+                {
+                    "sourcePath": "$.name.honorificPrefix",
+                    "optional": true,
+                    "targetPath": "$.ADDRESS.TITLE_P"
+                },
+                {
+                    "condition": "$.phoneNumbers[?(@.primary == true)].value != []",
+                    "sourcePath": "$.phoneNumbers[?(@.primary == true)].value",
+                    "preserveArrayWithSingleElement": false,
+                    "optional": true,
+                    "targetPath": "$.ADDRESS.TEL1_NUMBR"
+                },
+                {
+                    "condition": "$.phoneNumbers[?(@.type == 'work')].value != []",
+                    "sourcePath": "$.phoneNumbers[?(@.type == 'work')].value",
+                    "preserveArrayWithSingleElement": true,
+                    "optional": true,
+                    "targetPath": "$.ADDRESS.TEL1_NUMBR",
+                    "functions": [
+                        {
+                            "function": "elementAt",
+                            "index": 0
+                        }
+                    ]
+                },
+                {
+                    "sourcePath": "$.phoneNumbers[*].value",
+                    "preserveArrayWithSingleElement": true,
+                    "optional": true,
+                    "targetPath": "$.ADDTEL[?(@.TELEPHONE)]"
+                },
+                {
+                    "optional": true,
+                    "targetPath": "$.DEFAULTS.LANGU",
+                    "type": "valueMapping",
+                    "sourcePaths": [
+                        "$.locale"
+                    ],
+                    "defaultValue": "E",
+                    "valueMappings": [
+                        {
+                            "key": [
+                                "bg"
+                            ],
+                            "mappedValue": "W"
+                        }
+                    ]
+                },
+                {
+                    "sourcePath": "$.preferredLanguage",
+                    "optional": true,
+                    "targetPath": "$.ADDRESS.LANGUP_ISO",
+                    "functions": [
+                        {
+                            "function": "toUpperCaseString"
+                        }
+                    ]
+                },
+                {
+                    "optional": true,
+                    "targetPath": "$.LOGONDATA.TZONE",
+                    "type": "valueMapping",
+                    "sourcePaths": [
+                        "$.timezone"
+                    ],
+                    "defaultValue": "CET",
+                    "valueMappings": [
+                        {
+                            "key": [
+                                "Europe/Sofia"
+                            ],
+                            "mappedValue": "EET"
+                        }
+                    ]
+                },
+                {
+                    "targetPath": "$.PASSWORD.BAPIPWD",
+                    "scope": "createEntity",
+                    "functions": [
+                        {
+                            "function": "randomPassword",
+                            "passwordLength": 24,
+                            "minimumNumberOfLowercaseLetters": 1,
+                            "minimumNumberOfUppercaseLetters": 1,
+                            "minimumNumberOfDigits": 1,
+                            "minimumNumberOfSpecialSymbols": 0
+                        }
+                    ]
+                },
+                {
+                    "constant": "updateEntity",
+                    "targetVariable": "operationTypeVariable"
+                },
+                {
+                    "constant": "createEntity",
+                    "targetVariable": "operationTypeVariable",
+                    "scope": "createEntity"
+                },
+                {
+                    "condition": "$.active == false && '${operationTypeVariable}' == 'createEntity'",
+                    "constant": "X",
+                    "targetPath": "$.LOCK_LOCALLY"
+                },
+                {
+                    "condition": "'${operationTypeVariable}' == 'updateEntity'",
+                    "constant": "U",
+                    "targetPath": "$.LOCK"
+                },
+                {
+                    "condition": "$.active == false && '${operationTypeVariable}' == 'updateEntity'",
+                    "constant": "L",
+                    "targetPath": "$.LOCK"
+                }
+            ]
+        },
+        "group": {
+            "condition": "isAttributeWithOptionalPrefix($.displayName, abap.role.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], abap.role.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
+            "mappings": [
+                {
+                    "sourcePath": "$.displayName",
+                    "targetVariable": "entityIdTargetSystem",
+                    "scope": "createEntity",
+                    "functions": [
+                        {
+                            "function": "replaceFirstString",
+                            "condition": "isAttributeWithMandatoryPrefix(@, abap.role.prefix)",
+                            "regex": "%abap.role.prefix%",
+                            "replacement": ""
+                        }
+                    ]
+                },
+                {
+                    "sourcePath": "$.displayName",
+                    "targetPath": "$.ROLE_NAME",
+                    "functions": [
+                        {
+                            "function": "replaceFirstString",
+                            "condition": "isAttributeWithMandatoryPrefix(@, abap.role.prefix)",
+                            "regex": "%abap.role.prefix%",
+                            "replacement": ""
+                        }
+                    ]
+                },
+                {
+                    "sourcePath": "$.members[*].value",
+                    "preserveArrayWithSingleElement": true,
+                    "optional": true,
+                    "targetPath": "$.USERLIST[?(@.USERNAME)]",
+                    "functions": [
+                        {
+                            "function": "resolveEntityIds"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "gitFetchAllowed": false
+}
