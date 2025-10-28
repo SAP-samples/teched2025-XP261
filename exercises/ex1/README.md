@@ -1,11 +1,13 @@
 # Exercise 1 - Import SAP back-end roles in SAP Cloud Identity Services 
 
 In this exercise, we will import the back-en authorizations to IdDS. For this, we will create IPS source and target systems.  
+<img src="/exercises/ex1/images/Intro1.png">
 
 * We will start by creating source systems for importing authorizations in SAP SCI from the SAP S/4 and the BTP subaccount. 
 * These authorization will be sent via IPS to the Entra ID tenant in [exercise 2](../ex2/README.md). Entra ID is the IdM solution responsible for centrally managing the assignments, therefore we need the SAP authorizations in the Entra ID tenant. For this purpose, we will create a target system that corresponds to Entra ID. 
 * We will create systems for assignment and user provisioning to the SAP solutions
- 
+
+
 
 ## Table of Contents
 - [1.1 Download the JSON files](#11--download-the-json-files)
@@ -86,7 +88,7 @@ Click on the result and inspect the details.Afterwards navigate from the console
 
 13. Let's search for Groups that start with **TECHED_**. You will notice that the Application Name indicates the source system.
 
-<img src="/exercises/ex1/images/S132.png">
+<img src="/exercises/ex1/images/S1322.png">
 
 
 ## 1.3  SAP S/4HANA Cloud Private Edition onboarding 

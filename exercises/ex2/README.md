@@ -1,6 +1,8 @@
 # Exercise 2 - Provision SAP back-end roles to Microsoft Entra ID
 
-In the previous exercise we have all the necessary authorizations from our backend systems. Now we have to synchronize them to the identity management solution. In this scenario the identity management solution is your Entra ID tenant.
+In the previous exercise we have all the necessary authorizations from our backend systems. Now we have to synchronize them to the identity management solution, your Entra ID tenant.
+
+<img src="/exercises/ex2/images/Intro2.png">
 
 ## Table of Contents
 - [2.1  Systems for Microsoft Entra ID import](#21--systems-for-microsoft-entra-id-import)
@@ -60,11 +62,11 @@ The values for the properties *ips.application.id.s4* and *ips.application.id.xs
 
 5. Log in your Microsoft Entra ID tenant and check the imported groups. Filter by **TECHED_**. 
 
-<img src="/exercises/ex2/images/S22-3.png"> 
+<img src="/exercises/ex2/images/S22-31.png"> 
 
 Notice that the number and name of groups is similar to the one on the SCI tenant: 
 
-<img src="/exercises/ex2/images/S22-4.png"> 
+<img src="/exercises/ex2/images/S22-41.png"> 
 
 ## Summary
 

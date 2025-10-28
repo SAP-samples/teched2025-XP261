@@ -1,6 +1,6 @@
 # Getting started
 
-We have chosen this scenario because it follows the best practices for integrating an identity management solution into an SAP landscape. Throughout these exercises you will learn how to setup the identity access management flows between a Microsoft Entra ID tenant and your SAP landscape. As per our [reference architecture](https://architecture.learning.sap.com/docs/ref-arch/20c6b29b1e), the SAP Cloud Identity Services tenant are positioned in front of your SAP landscape and serve as the designated Identity and Access Management interface for SAP SaaS integrations. 
+We chose this scenario because it follows the best practices for integrating an identity management solution into an SAP landscape. Throughout these exercises you will learn how to setup the identity access management flows between a Microsoft Entra ID tenant and your SAP landscape. As per our [reference architecture](https://architecture.learning.sap.com/docs/ref-arch/20c6b29b1e), the SAP Cloud Identity Services tenant are positioned in front of your SAP landscape and serve as the designated Identity and Access Management interface for SAP SaaS integrations. 
 
 SAP Cloud Identity Services (SCI) are a group of services of SAP Business Technology Platform (SAP BTP), which enable you to integrate identity and access management between systems. The goal is to provide a seamless single sign-on experience across systems while ensuring that system and data access are secure. SAP Cloud Identity Services include Identity Authentication (IAS), Identity Provisioning (IPS), Identity Directory (IdDS), and Authorization Management (AMS).
 
@@ -112,11 +112,11 @@ You will find a subbacout that coresonds to your seat number:
 
  <img src="./images/S0-5.png" >
 
- 3. Press on the subaccount and search under **Role Collections** for the **TECHED_BTP_FinanceAdmin** role collection. 
+ 3. Press on the subaccount and search under **Role Collections** for the **FINANCE_ADMIN** role collection. 
  
- <img src="./images/S0-12.png" >
+ <img src="./images/S0-122.png" >
 
- In exercise 5, this role collection will be assigned in Micrososft Entra to a newly created employee. 
+ In exercise 5, this role collection will be assigned in Micrososft Entra ID to a newly created employee. 
 
 ## Summary
 

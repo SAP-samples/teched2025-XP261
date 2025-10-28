@@ -7,7 +7,7 @@ This repository contains the material for the SAP TechEd 2025 session XP261 - Id
 ## Overview
 
 Learn how to integrate SAP Cloud Identity Services with Microsoft Entra to deliver unified user lifecycle management across SAP software and third-party applications. The end-to-end scenario in this hands-on session spans across cloud and on-premises environments to provide consistent access control throughout the enterprise.
-<img src=".\scenario.png"/>
+<img src=".\Intro.png"/>
 
 ## Requirements
 
