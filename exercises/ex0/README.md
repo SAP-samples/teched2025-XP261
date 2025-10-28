@@ -56,7 +56,7 @@ Replace `<NN>` with your seat number, for example `05` or `31`.
    
 ### Accessing SAP SuccessFactors tenant
 1. Search for the internet browser on your computer and navigate to your SAP SuccessFactors (SAP SFSF) tenant.
-Unlike the previous exercise, we will use a shared SAP SFSF tenant 
+Unlike the previous exercise, you will use a shared SAP SFSF tenant 
 
 URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP062575
 

@@ -56,5 +56,5 @@ In this exercise, you will onboard the new employee in the scenario with the nam
 
 You've successfully onboard the new employee. In the next exercise you will provision the user from SAP SFSF to Microsoft Entra ID, and assign it to the previously provisioned group from SCI using an access package.
 
-Continue with [Exercise 4](../ex4/README.md).
+Continue with [Exercise 4 - Assign an access package in Microsoft Entra ID](../ex4/README.md), or go back to the [overview](../README.md).
 

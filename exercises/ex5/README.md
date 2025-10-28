@@ -1,6 +1,6 @@
 # Exercise 5 - Provisioning to SAP back-end systems
 
-In this exercise, we will provision the new user with the two new assignments to the SAP target systens. 
+In this exercise, you will provision the new user with the two new assignments to the SAP target systens. 
 
 <img src="./images/Intro5.png">
 
@@ -29,7 +29,7 @@ When analyzing the details you will notice that in each target solution one user
 
 ## 5.2 Check user creation and group assignment in the back-end
 
-In this exercise we will check in the back-end systems that the users are created and they have the assigned authorizations. 
+In this exercise you will check in the back-end systems that the users are created and they have the assigned authorizations. 
 
 ### Status in SAP S/4HANA PCE system 
 

@@ -1,11 +1,11 @@
 # Exercise 1 - Import SAP back-end roles in SAP Cloud Identity Services 
 
-In this exercise, we will import the back-en authorizations to IdDS. For this, we will create IPS source and target systems.  
+In this exercise, you will import the back-en authorizations to IdDS. For this, you will create IPS source and target systems.  
 <img src="/exercises/ex1/images/Intro1.png">
 
-* We will start by creating source systems for importing authorizations in SAP SCI from the SAP S/4 and the BTP subaccount. 
-* These authorization will be sent via IPS to the Entra ID tenant in [exercise 2](../ex2/README.md). Entra ID is the IdM solution responsible for centrally managing the assignments, therefore we need the SAP authorizations in the Entra ID tenant. For this purpose, we will create a target system that corresponds to Entra ID. 
-* We will create systems for assignment and user provisioning to the SAP solutions
+* you will start by creating source systems for importing authorizations in SAP SCI from the SAP S/4 and the BTP subaccount. 
+* These authorization will be sent via IPS to the Entra ID tenant in [exercise 2](../ex2/README.md). Entra ID is the IdM solution responsible for centrally managing the assignments, therefore you need the SAP authorizations in the Entra ID tenant. For this purpose, you will create a target system that corresponds to Entra ID. 
+* you will create systems for assignment and user provisioning to the SAP solutions
 
 
 
@@ -130,9 +130,9 @@ For the property *ips.application.id*, similarly with exercise 1.2 step 3, you w
 <img src="/exercises/ex1/images/S13-7.png" >
 
 ## 1.4  Systems for provisioning to SAP back-end applications 
-Up until now we have created the connections between SCI and back-end systems for authorization import. Any subsequent user creation and authorization assignment will be performed centrally by Microsoft Entra ID in the SCI and afterwards provisioned to the back-end. It is a bad practice to perform authorization assignments in the back-end systems because the whole landscape will be out of sync. 
+Up until now you have created the connections between SCI and back-end systems for authorization import. Any subsequent user creation and authorization assignment will be performed centrally by Microsoft Entra ID in the SCI and afterwards provisioned to the back-end. It is a bad practice to perform authorization assignments in the back-end systems because the whole landscape will be out of sync. 
 
-In this exercise we will create the necessary connections between SCI and the back-end systems for subsequent provisioning. For this we will need a source system representing the central storage of the SCI and two target systems representing the back-end systems. We will create the source system manually and the target systems, from imported files as we did till now.
+In this exercise you will create the necessary connections between SCI and the back-end systems for subsequent provisioning. For this you will need a source system representing the central storage of the SCI and two target systems representing the back-end systems. you will create the source system manually and the target systems, from imported files as you did till now.
 
 1. In your SCI administrative console tab Identity Provisioning, please choose **Source Systems**. Click on the **Add** button and then choose the type **Local Identity Directory**
 Give your system a meaningful name. Our suggestion is *SAP provisioning source*.
@@ -196,7 +196,7 @@ Now let's proceed with the target systems.
 
 You've now successfully configured your SAP back-end systems for authorization import for SAP SCI and ran the initial load jobs. Also, you have prepared these systems for provisioning of users and assignments, as you will see in exercises 5 and 6. 
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2 - Provision SAP back-end roles to Microsoft Entra ID](../ex2/README.md), or go back to the [overview](../README.md).
 
 
 

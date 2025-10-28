@@ -1,6 +1,6 @@
 # Exercise 2 - Provision SAP back-end roles to Microsoft Entra ID
 
-In the previous exercise we have all the necessary authorizations from our backend systems. Now we have to synchronize them to the identity management solution, your Entra ID tenant.
+In the previous exercise you have all the necessary authorizations from our backend systems. Now you have to synchronize them to the identity management solution, your Entra ID tenant.
 
 <img src="/exercises/ex2/images/Intro2.png">
 
@@ -14,7 +14,7 @@ In the previous exercise we have all the necessary authorizations from our backe
 
 ### 2.1.1 Create one IPS source system for syncing authorizations to Entra ID
 
-With the previously created systems we are importing in the Identity Directory all the authorizations from the SAP back-end applications. Because we want to sync these SAP authorization to Entra ID, we will create a dedicated source system representing the IdDS.
+With the previously created systems you are importing in the Identity Directory all the authorizations from the SAP back-end applications. Because you want to sync these SAP authorization to Entra ID, you will create a dedicated source system representing the IdDS.
 
 1. Navigate to the SCI administrative console and from the third tab Identity Provisioning please choose **Source Systems**. Click on the **Add** button and then click on Browse and search for the **Non-SAP import source** file. 
 
@@ -72,4 +72,4 @@ Notice that the number and name of groups is similar to the one on the SCI tenan
 
 You've now provisioned the SAP groups to your identity management solution. Continue with the next exercise to assign these authorizations to users. 
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 3 - Onboard a new employee in SAP SuccessFactors ](../ex3/README.md), or go back to the [overview](../README.md).

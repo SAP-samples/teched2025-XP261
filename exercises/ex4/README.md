@@ -1,6 +1,6 @@
 # Exercise 4 - Assign an access package in Microsoft Entra ID
 
-In this exercise, we will first provision the newly onboarded employee from SuccessFactors to Entra. In Entra, you will create an [access package](https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-access-package-first) that contains the groups that represents the role in the SAP S4A system, and the role collection in BTP. By assigning the user to the access package, the user becomes a member in both groups. These group memberships in Entra will assign the user in the upcoming exercises to the role in S4A and the role collection in BTP.
+In this exercise, you will first provision the newly onboarded employee from SuccessFactors to Entra. In Entra, you will create an [access package](https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-access-package-first) that contains the groups that represents the role in the SAP S4A system, and the role collection in BTP. By assigning the user to the access package, the user becomes a member in both groups. These group memberships in Entra will assign the user in the upcoming exercises to the role in S4A and the role collection in BTP.
 
 
 <img src="./images/Intro4.png">
@@ -116,7 +116,7 @@ Click **Select**.
 23.   Click **Refresh**. Your user should be listed in the assignments for your access package.  
 <img src="/exercises/ex4/images/S4-23.png">
 
-In a productive setup we would schedule a job to go through the assignments in the Access Package and provision them to the backend applications. In the favor of time, we will provision these groups on-demand to the target solution, the SAP SCI tenant. 
+In a productive setup you would schedule a job to go through the assignments in the Access Package and provision them to the backend applications. In the favor of time, you will provision these groups on-demand to the target solution, the SAP SCI tenant. 
 
 ## 4.2 Provisioning to SAP SCI
 
@@ -175,8 +175,8 @@ You will notice the two assigned Microsoft Entra groups.
 
 ## Summary
 
-You've now provisioned the new employee to Entra, created an access package for her, and assigned her to the package. This made the new employee Jane Smith a member in the group representing the role in SAP S/4 system, and a member in the group representing the role collection in the BTP subaccount. The newly created user with authorizations is now present in SAP SCI. In the next exercise, we will continue the provisioning to the SAP back-end systems.
+You've now provisioned the new employee to Entra, created an access package for her, and assigned her to the package. This made the new employee Jane Smith a member in the group representing the role in SAP S/4 system, and a member in the group representing the role collection in the BTP subaccount. The newly created user with authorizations is now present in SAP SCI. In the next exercise, you will continue the provisioning to the SAP back-end systems.
 
-Continue to - [Exercise 5 - Excercise 5 ](../ex5/README.md)
+Continue to - [Exercise 5 - Provisioning to SAP back-end systems](../ex5/README.md), or go back to the [overview](../README.md).
 
 
