@@ -32,7 +32,7 @@
     "fromImport": false,
     "transformation": {
         "group": {
-            "condition": "$.displayName !== 'Subaccount Administrator'",
+            "condition": "$.displayName =~ /FINANCE_ADMIN_.*/",
             "mappings": [
                 {
                     "sourcePath": "$.id",

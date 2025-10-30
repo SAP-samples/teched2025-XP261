@@ -18,7 +18,12 @@ In this exercise, you will import the back-en authorizations to IdDS. For this, 
 
 ## 1.1  Download the JSON files 
 
-Save all these  JSON files locally because you will need to import them in the next step. 
+Save all these  JSON files locally because you will need to import them in the next step. Open the following JSON files in a separate window. 
+
+Open each following JSON files in a separate window. Press on **Download Raw File** in the window that will open. 
+
+<img src="/exercises/ex1/images/S11.png">
+
 
 1. [BTP CF import source](./images/BTPCFimportsource.json)
 2. [Non-SAP import source](./images/NON-SAPimportsource.json)  
@@ -30,9 +35,7 @@ Save all these  JSON files locally because you will need to import them in the n
 8. [BTP CF provisioning target](./images/BTPCFprovisioningtarget.json)
 9. [S4A provisioning target](./images/S4Aprovisioningtarget.json)
 
-Press on **Download Raw File** in the window that will open. 
 
-<img src="/exercises/ex1/images/S11.png">
 
 ## 1.2  SAP BTP onboarding 
 
