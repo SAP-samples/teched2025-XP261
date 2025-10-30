@@ -108,6 +108,8 @@ In the tab **Destinations**, choose from the drop-down menu **ABAP_S4A**
 
 For the property *ips.application.id*, similarly with exercise 1.2 step 3, you will need to search for the Application ID value of the S/4HANA Cloud Private Edition in IAS. To find this value, duplicate this browser tab and navigate in the SCI console to the 4th tab **Applications & Resources** and choose **Applications**. Search for the S/4HANA application and copy the value of the Application ID. 
 
+The value for the property abap.role.name.filter is *PROCUREMENT_ADMIN_NNN*. Replace `<NNN>` with your seat number, for example **PROCUREMENT_ADMIN_010**.
+
 4. Now save your system. 
 
 5. Let's add a target system for this newly created source system. Navigate to the **Target Systems** . Click on the **Add** button and then click on Browse and search for the **S4A import target** file that you previously saved.
@@ -116,7 +118,7 @@ For the property *ips.application.id*, similarly with exercise 1.2 step 3, you w
 
 <img src="/exercises/ex1/images/S13-3.png" >
 
-7. Navigate to the Properties Tab. Set the *ips.trace.failed.entity.content*  on *true*  and abap.role.name.filter on *PROCUREMENT_ADMIN_NNN*. Replace `<NNN>` with your seat number, for example **PROCUREMENT_ADMIN_010**.
+7. Navigate to the Properties Tab. Set the *ips.trace.failed.entity.content*  on *true* .
 
 <img src="/exercises/ex1/images/S13-4.png" >
 
