@@ -104,7 +104,7 @@ In the tab **Destinations**, choose from the drop-down menu **ABAP_S4A**
 <img src="/exercises/ex1/images/S13-1.png">
 
 3. Navigate  to the third tab  **Properties** tab and fill in the red marked properties: 
-<img src="/exercises/ex1/images/S13-2.png" >
+<img src="/exercises/ex1/images/S13-22.png" >
 
 For the property *ips.application.id*, similarly with exercise 1.2 step 3, you will need to search for the Application ID value of the S/4HANA Cloud Private Edition in IAS. To find this value, duplicate this browser tab and navigate in the SCI console to the 4th tab **Applications & Resources** and choose **Applications**. Search for the S/4HANA application and copy the value of the Application ID. 
 
