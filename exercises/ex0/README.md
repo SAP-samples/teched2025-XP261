@@ -1,6 +1,6 @@
 # Getting started
 
-We chose this scenario because it follows the best practices for integrating an identity management solution into an SAP landscape. Throughout these exercises you will learn how to setup the identity access management flows between a Microsoft Entra ID tenant and your SAP landscape. As per our [reference architecture](https://architecture.learning.sap.com/docs/ref-arch/20c6b29b1e), the SAP Cloud Identity Services tenant are positioned in front of your SAP landscape and serve as the designated Identity and Access Management interface for SAP SaaS integrations. 
+We chose this scenario because it follows the best practices for integrating an identity management solution into an SAP landscape. Throughout these exercises you will learn how to setup the identity access management flows between a Microsoft Entra tenant and your SAP landscape. As per our [reference architecture](https://architecture.learning.sap.com/docs/ref-arch/20c6b29b1e), the SAP Cloud Identity Services tenant are positioned in front of your SAP landscape and serve as the designated Identity and Access Management interface for SAP SaaS integrations. 
 
 SAP Cloud Identity Services (SCI) are a group of services of SAP Business Technology Platform (SAP BTP), which enable you to integrate identity and access management between systems. The goal is to provide a seamless single sign-on experience across systems while ensuring that system and data access are secure. SAP Cloud Identity Services include Identity Authentication (IAS), Identity Provisioning (IPS), Identity Directory (IdDS), and Authorization Management (AMS).
 
@@ -12,33 +12,33 @@ SAP Cloud Identity Services (SCI) are a group of services of SAP Business Techno
 Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session.
 
 You will get access to the following systems:  
-* [Microsoft EntraID](#accessing-microsoft-entra-id) 
+* [Microsoft Entra](#accessing-microsoft-entra) 
 * [SAP Cloud Identity Services](#accessing-your-sap-cloud-identity-services-tenant) 
 * [SAP SuccessFactors](#accessing-sap-successfactors-tenant) 
 * [SAP S/4HANA Private Edition](#accessing-sap-s4hana-cloud-private-edition)  
 * [BTP subaccount](#accessing-your-btp-subaccount). 
 
 
-### Accessing Microsoft Entra ID
+### Accessing Microsoft Entra
 
-#### Setup Multifactor Authentication (MFA)
+Setup Multifactor Authentication (MFA) for your Entra admin user. This is required to access the Entra admin center.
 
 | Step   | Description                | Screenshot |
 | :----- | :------------------------- | :--------- |
-| 0.1    | Open a new browser windows and go to the [My Account Web Portal](https://myaccount.microsoft.com/) to setup MFA for your Entra administrator user.<br><br>Enter `admin<NNN>@bestruncorp.onmicrosoft.com` for the user name. Replace `<NNN>` with the number of your seat, for example admin045@bestruncorp.onmicrosoft.com.<br><br>Click **Next**.|<a href="./images/0-1.jpg" target="_blank"><img src="./images/0-1.jpg" width="250"/></a>|
-| 0.2    | Enter your Entra admin initial login password.<br><br>Replace `<NNN>` at the end of the password with the number of your seat.<br><br>Click **Sign in**.|<a href="./images/0-2.jpg" target="_blank"><img src="./images/0-2.jpg" width="250"/></a>|
-| 0.3    | Click **Next**. |<a href="./images/0-3.jpg" target="_blank"><img src="./images/0-3.jpg" width="250"/></a>|
-| 0.4    | Click **Next**. |<a href="./images/0-4.jpg" target="_blank"><img src="./images/0-4.jpg" width="250"/></a>|
-| 0.5    | Click **Next**. |<a href="./images/0-5.jpg" target="_blank"><img src="./images/0-5.jpg" width="250"/></a>|
-| 0.6    | On your mobile phone, launch the *Authenticator* app.<br><br>Press the **+** button.|<a href="./images/0-6.jpg" target="_blank"><img src="./images/0-6.jpg" width="250"/></a>|
-| 0.7    | Select **Work or school account** and press **Scan QR code**.|<a href="./images/0-7.jpg" target="_blank"><img src="./images/0-7.jpg" width="250"/></a>|
-| 0.8    | Scan the QR Code with your mobile device.|<a href="./images/0-8.jpg" target="_blank"><img src="./images/0-8.jpg" width="250"/></a>|
-| 0.9    | Click **Next**. |<a href="./images/0-9.jpg" target="_blank"><img src="./images/0-9.jpg" width="250"/></a>|
-| 0.10    | A randon number is generated. |<a href="./images/0-10.jpg" target="_blank"><img src="./images/0-10.jpg" width="250"/></a>|
-| 0.11    | Enter the number in the Authenticator app on the mobile device.|<a href="./images/0-11.jpg" target="_blank"><img src="./images/0-11.jpg" width="250"/></a>|
-| 0.12   | Click **Next**. |<a href="./images/0-12.jpg" target="_blank"><img src="./images/0-12.jpg" width="250"/></a>|
-| 0.13   | Your user account is now setup for MFA.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
-| 0.14   | Close the browser tab.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
+| 1    | Open a new browser windows and go to the [Entra admin center](https://entra.microsoft.com/) to setup MFA for your Entra administrator user.<br><br>Enter **admin`<NNN>`@bestruncorp.onmicrosoft.com** for the user name. Replace `<NNN>` with the number of your seat, for example **admin045@bestruncorp.onmicrosoft.com**.<br><br>Click **Next**.|<a href="./images/0-1.jpg" target="_blank"><img src="./images/0-1.jpg" width="250"/></a>|
+| 2    | Enter your Entra admin initial login password.<br><br>Replace `<NNN>` at the end of the password with the number of your seat.<br><br>Click **Sign in**.|<a href="./images/0-2.jpg" target="_blank"><img src="./images/0-2.jpg" width="250"/></a>|
+| 3    | Click **Next**. |<a href="./images/0-3.jpg" target="_blank"><img src="./images/0-3.jpg" width="250"/></a>|
+| 4    | Click **Next**. |<a href="./images/0-4.jpg" target="_blank"><img src="./images/0-4.jpg" width="250"/></a>|
+| 5    | Click **Next**. |<a href="./images/0-5.jpg" target="_blank"><img src="./images/0-5.jpg" width="250"/></a>|
+| 6    | On your mobile phone, launch the *Authenticator* app.<br><br>Press the **+** button.|<a href="./images/0-6.jpg" target="_blank"><img src="./images/0-6.jpg" width="250"/></a>|
+| 7    | Select **Work or school account** and press **Scan QR code**.|<a href="./images/0-7.jpg" target="_blank"><img src="./images/0-7.jpg" width="250"/></a>|
+| 8    | Scan the QR Code with your mobile device.|<a href="./images/0-8.jpg" target="_blank"><img src="./images/0-8.jpg" width="250"/></a>|
+| 9    | Click **Next**. |<a href="./images/0-9.jpg" target="_blank"><img src="./images/0-9.jpg" width="250"/></a>|
+| 10    | A randon number is generated. |<a href="./images/0-10.jpg" target="_blank"><img src="./images/0-10.jpg" width="250"/></a>|
+| 11    | Enter the number in the Authenticator app on the mobile device.|<a href="./images/0-11.jpg" target="_blank"><img src="./images/0-11.jpg" width="250"/></a>|
+| 12   | Click **Next**. |<a href="./images/0-12.jpg" target="_blank"><img src="./images/0-12.jpg" width="250"/></a>|
+| 13   | Your user account is now setup for MFA.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
+| 14   | Close the browser tab.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
 
 ### Accessing your SAP Cloud Identity Services tenant 
 
@@ -70,29 +70,29 @@ URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP062575
 
 1. Search for the SAP Logon icon <img src="./images/S17.png" width=10% height=10%> on your desktop. 
 
-2. Create a new connection:
+2. Search for the connection to system **S4A**. If you don't find it, create a new connection for it:
 
 <img src="./images/S0-6.png" >
 
-3. Add the following details:
+Add the following details:
 
 Description: TechEd 2025
 System ID: S4A        
 Instance: 00        
-IP: s4xp261.tdc.sap.com        
+Application Server: s4xp261.tdc.sap.com       
 Client: 101
 
 <img src="./images/S0-7.png" >
 
 <img src="./images/S0-8.png" >
 
-4. Now that you have created the new connection let's log in! 
+3. Now that you have created the new connection let's log in! 
 <img src="./images/S0-9.png" >
 
 Client: 101
-User:  XP261-`<NNN>`. Replace `<NNN>` with your seat number, for example XP261-`045`.
+User:  **XP261-`<NNN>`**. Replace `<NNN>` with your seat number, for example **XP261-`045`**.
 
-5. Let's check the authorization available on this system. Execute the PFCG transaction
+4. Let's check the authorization available on this system. Execute the PFCG transaction
 
 <img src="./images/S0-10.png" >
 
@@ -100,7 +100,7 @@ And search for the **PROCUREMENT_ADMIN** role
 
 <img src="./images/S0-11.png" >
 
-In exercise 5, this role will be assigned in Micrososft Entra to a newly created employee. 
+In exercise 5, this role will be assigned in Micrososft Entra to a newly created employee.
 
 ### Accessing your BTP subaccount
 
@@ -116,7 +116,7 @@ You will find a subbacout that coresonds to your seat number:
  
  <img src="./images/S0-122.png" >
 
- In exercise 5, this role collection will be assigned in Micrososft Entra ID to a newly created employee. 
+ In exercise 5, this role collection will be assigned in Micrososft Entra to a newly created employee. 
 
 ## Summary
 
