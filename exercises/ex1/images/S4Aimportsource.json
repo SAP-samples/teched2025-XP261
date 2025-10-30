@@ -11,7 +11,7 @@
     "state": "ENABLED",
     "systemManagementType": "CUSTOMER_MANAGED",
     "properties": {
-        "abap.role.name.filter": "PROCUREMENT_ADMIN",
+        "abap.role.name.filter": "",
         "abap.role.prefix": "TECHED_S4A_",
         "ips.application.id": "",
         "ips.trace.failed.entity.content": "false"
