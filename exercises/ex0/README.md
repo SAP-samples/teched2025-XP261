@@ -37,8 +37,12 @@ Setup Multifactor Authentication (MFA) for your Entra admin user. This is requir
 | 10    | A randon number is generated. |<a href="./images/0-10.jpg" target="_blank"><img src="./images/0-10.jpg" width="250"/></a>|
 | 11    | Enter the number in the Authenticator app on the mobile device.|<a href="./images/0-11.jpg" target="_blank"><img src="./images/0-11.jpg" width="250"/></a>|
 | 12   | Click **Next**. |<a href="./images/0-12.jpg" target="_blank"><img src="./images/0-12.jpg" width="250"/></a>|
-| 13   | Your user account is now setup for MFA.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
-| 14   | Close the browser tab.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
+| 13   | Your user account is now setup for MFA.<br><br>Click **Next**|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-13.jpg" width="250"/></a>|
+| 14   | Continue to login to the Entra admin center.<br><br>Click **Next**.|<a href="./images/0-13.jpg" target="_blank"><img src="./images/0-14.jpg" width="250"/></a>|
+| 15   | A new random number is generated. Enter it on your Authenticator app.<br><br>Confirm with **Yes**.|<a href="./images/0-15.jpg" target="_blank"><img src="./images/0-15.jpg" width="250"/></a>|
+| 16   | Click **Next**.|<a href="./images/0-16.jpg" target="_blank"><img src="./images/0-16.jpg" width="250"/></a>|
+| 17   | Click **Done**.|<a href="./images/0-17.jpg" target="_blank"><img src="./images/0-17.jpg" width="250"/></a>|
+| 18   | You've successfully logged in the Entra admin center.|<a href="./images/0-18.jpg" target="_blank"><img src="./images/0-18.jpg" width="250"/></a>|
 
 ### Accessing your SAP Cloud Identity Services tenant 
 
