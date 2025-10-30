@@ -116,8 +116,11 @@ For the property *ips.application.id*, similarly with exercise 1.2 step 3, you w
 
 <img src="/exercises/ex1/images/S13-3.png" >
 
-7. Navigate to the Properties Tab and add set the *ips.trace.failed.entity.content*  on *true* . 
+7. Navigate to the Properties Tab. Set the *ips.trace.failed.entity.content*  on *true*  and abap.role.name.filter on *PROCUREMENT_ADMIN_NNN*. Replace `<NNN>` with your seat number, for example **PROCUREMENT_ADMIN_010**.
+
 <img src="/exercises/ex1/images/S13-4.png" >
+
+
 
 8. Save your system. 
 
