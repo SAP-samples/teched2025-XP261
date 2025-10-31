@@ -9,7 +9,7 @@ SAP Cloud Identity Services (SCI) are a group of services of SAP Business Techno
 - [Summary](#summary)
 
 ## Accessing the landscape
-Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session.
+Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session. Refer to the attached excel for additional credentials. 
 
 You will get access to the following systems:  
 * [Microsoft Entra](#accessing-microsoft-entra) 
@@ -89,7 +89,7 @@ Description: TechEd 2025
 System ID: S4A        
 Instance: 00  
 SAProuter String: leave empty      
-Application Server: s4xp261.tdc.sap.com   (alternatively 34.6.95.215)      
+Application Server: s4xp261.tdc.sap.com (alternatively 34.6.95.215)      
 Client: 101
 
 <img src="./images/S0-7.png" >
