@@ -61,7 +61,7 @@ Search for the application that corresponds to you seat number: XP261_0NN and co
 
 <img src="/exercises/ex1/images/S125.png">
 
-For the other properties, please check the **XP261 keys.xslx** file that you previously saved. 
+For the other properties, please check the **XP261 keys.xslx** file that you saved previously. 
 
 4. Now save your system. 
 
@@ -73,8 +73,8 @@ For the other properties, please check the **XP261 keys.xslx** file that you pre
 
  Click on the **Add** button and then click on Browse and search for the **BTP CF import target** file that you previously saved.
 
-
-6. For the source system, choose from the drop-down menu the **BTP CF import source** system that you created at earlier. This will ensure that the entries coming from the BTP Subaccount will be provisioned to the Local Identity Directory.
+6. For the source system, choose from the drop-down menu the **BTP CF import source** system that you created at earlier. 
+This will ensure that the entries coming from the BTP Subaccount will be provisioned to the Local Identity Directory.
 
 <img src="/exercises/ex1/images/S128.png">
 
@@ -90,15 +90,8 @@ For the other properties, please check the **XP261 keys.xslx** file that you pre
 12. Navigate to Provisioning Logs and check the provisioning status and the details. 
 
 <img src="/exercises/ex1/images/S130.png">
-Click on the result and inspect the details.Afterwards navigate from the console to the tab **Users & Authorizations**  and choose **Groups**
 
-
-<img src="/exercises/ex1/images/S131.png">
-
-
-13. Let's search for Groups that start with **TECHED_**. You will notice that the Application Name indicates the source system.
-
-<img src="/exercises/ex1/images/S1322.png">
+Click on the result and inspect the details. Afterwards navigate from the console to the tab **Users & Authorizations**  and choose **Groups**
 
 
 ## 1.3  SAP S/4HANA Cloud Private Edition onboarding 
@@ -111,6 +104,7 @@ In the tab **Destinations**, choose from the drop-down menu **ABAP_S4A**
 <img src="/exercises/ex1/images/S13-1.png">
 
 3. Navigate  to the third tab  **Properties** tab and fill in the red marked properties: 
+
 <img src="/exercises/ex1/images/S13-22.png" >
 
 For the property *ips.application.id*, similarly with exercise 1.2 step 3, you will need to search for the Application ID value of the S/4HANA Cloud Private Edition in IAS. To find this value, duplicate this browser tab and navigate in the SCI console to the 4th tab **Applications & Resources** and choose **Applications**. Search for the S/4HANA application and copy the value of the Application ID. 
@@ -125,24 +119,17 @@ The value for the property abap.role.name.filter is *PROCUREMENT_ADMIN_NNN*. Rep
 
 <img src="/exercises/ex1/images/S13-3.png" >
 
-7. Navigate to the Properties Tab. Set the *ips.trace.failed.entity.content*  on *true* .
+7. Save your system. 
 
-<img src="/exercises/ex1/images/S13-4.png" >
+8. Let's run the initial load job. Navigate to your **Source Systems**.
 
-
-
-8. Save your system. 
-
-9. Let's run the initial load job. Navigate to your **Source Systems**.
-10. Choose the source system **S4A import source** and navigate to the tab **Jobs**.  Press on **Run Now** for the job type **Read Job**. 
+9. Choose the source system **S4A import source** and navigate to the tab **Jobs**.  Press on **Run Now** for the job type **Read Job**. 
 <img src="/exercises/ex1/images/S13-5.png" >
+ Navigate to Provisioning Logs and check the provisioning status and the details. 
 
-11. Navigate to Provisioning Logs and check the provisioning status and the details. 
+10. Let's check again the **Groups** section. You will notice that the Application Name indicates the source system.
 
-<img src="/exercises/ex1/images/S13-6.png" >
-
-12. Let's search for Groups that start with **TECHED_**. You will notice that the Application Name indicates the source system.
-<img src="/exercises/ex1/images/S13-7.png" >
+<img src="/exercises/ex1/images/S13-121.png">
 
 ## 1.4  Systems for provisioning to SAP back-end applications 
 Up until now you have created the connections between SCI and back-end systems for authorization import. Any subsequent user creation and authorization assignment will be performed centrally by Microsoft Entra ID in the SCI and afterwards provisioned to the back-end. It is a bad practice to perform authorization assignments in the back-end systems because the whole landscape will be out of sync. 
@@ -155,22 +142,23 @@ Give your system a meaningful name. Our suggestion is *SAP provisioning source*.
 <img src="/exercises/ex1/images/S14-0.png" >
 
 2. Navigate to the Properties tab and manually add the following standard properties.
+
 <img src="/exercises/ex1/images/S14-1.png" >
 
 
 | Property Name | Property Value | 
 |--------------|:-----:|
 | idds.user.filter|  groups.display sw "TECHED_"  |        
-| ips.trace.created.entity|  true  |  
-| ips.trace.created.entity.content|  true  |
-| ips.trace.failed.entity.content|  true  |
-| ips.trace.skipped.entity|  true  |
-| ips.trace.skipped.entity.content|  true  |
-| ips.trace.updated.entity|  true  |
-| ips.trace.updated.entity.content|  true  |  
+| (optional) ips.trace.created.entity|  true  |  
+| (optional) ips.trace.created.entity.content|  true  |
+| (optional) ips.trace.failed.entity.content|  true  |
+| (optional) ips.trace.skipped.entity|  true|
+| (optional) ips.trace.skipped.entity.content|  true  |
+| (optional) ips.trace.updated.entity|  true|
+| (optional) ips.trace.updated.entity.content|  true  |  
 
 
-3. Check that your system looks like this and save your system.
+3. Save your system.
 
 <img src="/exercises/ex1/images/S14-2.png" >
 
