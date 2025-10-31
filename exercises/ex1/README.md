@@ -40,6 +40,7 @@ Open each following JSON files in a separate window. Press on **Download Raw Fil
 ## 1.2  SAP BTP onboarding 
 
 1. Navigate to the SCI administrative console that corresponds to your seat. From the third tab **Identity Provisioning** please choose **Source Systems**.
+
 <img src="/exercises/ex1/images/S121.png">
 
 2. Click on the **Add** button and then click on Browse and search for the **BTP CF import source** file that you previously saved.
@@ -47,9 +48,11 @@ Open each following JSON files in a separate window. Press on **Download Raw Fil
 <img src="/exercises/ex1/images/S1222.png">
 
 3. Navigate  to the third tab  **Properties** tab  
+
 <img src="/exercises/ex1/images/S123.png">
 
-and fill in the red marked properties based on the local file:
+Notice the red marked properties. The system cannot be saved as long as these properties do not have values. 
+
 <img src="/exercises/ex1/images/S124.png">
 
 For the property *ips.application.id*, you will need to search for the Application ID value of the BTP subaccount in IAS. To find this value, duplicate this browser tab and navigate in the SCI console to the 4th tab **Applications & Resources** and choose **Applications**. 
@@ -58,10 +61,14 @@ Search for the application that corresponds to you seat number: XP261_0NN and co
 
 <img src="/exercises/ex1/images/S125.png">
 
+For the other properties, please check the **XP261 keys.xslx** file that you previously saved. 
+
 4. Now save your system. 
+
 <img src="/exercises/ex1/images/S126.png">
 
 5. Let's add a target system for this newly created source system. Navigate to the **Target Systems**.
+
 <img src="/exercises/ex1/images/S127.png">
 
  Click on the **Add** button and then click on Browse and search for the **BTP CF import target** file that you previously saved.

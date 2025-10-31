@@ -9,7 +9,7 @@ SAP Cloud Identity Services (SCI) are a group of services of SAP Business Techno
 - [Summary](#summary)
 
 ## Accessing the landscape
-Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session. Refer to the attached excel for additional credentials. 
+Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session. Refer to the attached [XP261 keys.xslx](./images/XP261keys.xlsx) for additional credentials. 
 
 You will get access to the following systems:  
 * [Microsoft Entra](#accessing-microsoft-entra) 
