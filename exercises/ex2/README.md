@@ -42,6 +42,8 @@ The values for the properties *ips.application.id.s4* and *ips.application.id.xs
 * for *ips.application.id.xsuuaa* navigate to your **BTP CF import source**  source system and search for the ips.application.id property, and copy the value. 
 * for *ips.application.id.s4* navigate to your **S4A import source**  source system and search for the ips.application.id property, and copy the value. 
 
+For the rest of the properties, use the XP261 keys.xslx file that you saved previously.
+
 <img src="/exercises/ex2/images/S211-4.png"> 
 
 4. Save your system. 

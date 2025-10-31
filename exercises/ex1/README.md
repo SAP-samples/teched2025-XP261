@@ -172,7 +172,7 @@ Now let's proceed with the target systems.
 
 <img src="/exercises/ex1/images/S14-3.png" >
 
-7. Navigate to the Properties Tab and add the values for the properties that are marked in red. The *ips.application.id** is the one that you found at step 3 in Exercise 1.2. 
+7. Navigate to the Properties Tab and add the values for the properties that are marked in red. The *ips.application.id* is the one that you found at step 3 in Exercise 1.2. The values of the other properties are in the XP261 keys.xslx file that you saved previously.
 
 <img src="/exercises/ex1/images/S14-4.png" >
 

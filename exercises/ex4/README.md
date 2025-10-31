@@ -62,11 +62,9 @@ Click **Next: Resource roles**.
   
 11.    In the search bar, enter your seat number with three digits (`NNN`), for example `014`.<br><br>Activate the checkboxes for both groups from the search results.<br><br>Click *Select*.   
 
-<img src="/exercises/ex4/images/S4-111.png">
+<img src="/exercises/ex4/images/S4-1111.png">
 
 12.    Select **Member** from the **Role** drop-down list for both groups. 
-
-
 
 13.    Click **Next: Requests**.
 
@@ -128,12 +126,14 @@ In a productive setup you would schedule a job to go through the assignments in 
 
 <img src="/exercises/ex4/images/S4-26.png">
 
-3. Clicl **Provisioning on demand** and search for the first groups **TECHED_BTP_FINANCE_ADMIN**.
+3. Clicl **Provisioning on demand** and search for the first groups **TECHED_BTP_FINANCE_ADMIN_NNN**.
 
-<img src="/exercises/ex4/images/S4-2711.png">
+<img src="/exercises/ex4/images/S52-31.png">
 
 4. Select **View all users** and search for the user that you created in SAP SFSF.
+
 <img src="/exercises/ex4/images/S42-41.png">
+
 Click **Provisioning**. 
 
 5. Let's analyze the provisioning details. As the group existed in SAP SCI, it was only updated with the new assignment. 
@@ -149,7 +149,7 @@ Click **Provisioning**.
 
 8. Search for the prefix **TECHED_S4**
 
-<img src="/exercises/ex4/images/S4-32.png">
+<img src="/exercises/ex4/images/S4-111111.png"> 
 
 
 
@@ -171,7 +171,7 @@ Copy the User principle name because you will need it later.
 
 12. Navigate to your SAP SCI console and navigate to the second tab **Users & Authorizations** and choose **Users**. Choose your newly created users and navigate to the **Group** tab.  You can search by email address (the user principal name from earlier).
 
-<img src="/exercises/ex4/images/S4-36.png">
+<img src="/exercises/ex4/images/S4-1211.png">
 
 You will notice the two assigned Microsoft Entra groups.
 
