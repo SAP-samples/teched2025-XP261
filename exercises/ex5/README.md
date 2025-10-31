@@ -65,7 +65,7 @@ In this exercise you will check in the back-end systems that the users are creat
 
 3. Identify your user and check the **Role Collections** assigned. 
 
-<img src="/exercises/ex5/images/S5-10.png">
+<img src="/exercises/ex5/images/S5-11.png">
 
 ## Summary
 
