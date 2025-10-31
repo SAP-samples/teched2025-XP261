@@ -133,7 +133,7 @@ In a productive setup you would schedule a job to go through the assignments in 
 <img src="/exercises/ex4/images/S4-2711.png">
 
 4. Select **View all users** and search for the user that you created in SAP SFSF.
-<img src="/exercises/ex4/images/S4-281.png">
+<img src="/exercises/ex4/images/S42-41.png">
 Click **Provisioning**. 
 
 5. Let's analyze the provisioning details. As the group existed in SAP SCI, it was only updated with the new assignment. 
@@ -150,6 +150,8 @@ Click **Provisioning**.
 8. Search for the prefix **TECHED_S4**
 
 <img src="/exercises/ex4/images/S4-32.png">
+
+
 
 9. Search for the same user
 

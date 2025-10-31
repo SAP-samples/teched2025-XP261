@@ -75,29 +75,40 @@ URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP062575
 
 1. Search for the SAP Logon icon <img src="./images/S17.png" width=10% height=10%> on your desktop. 
 
-2. Search for the connection to system **S4A**. If you don't find it, create a new connection for it:
+2. Search for the connection to system **S4A**. If you don't find it, create a new connection for it
 
-<img src="./images/S0-6.png" >
+<img src="./images/S0-61.png" >
+
+Click **Next** and manually add the following values: 
+
+<img src="./images/S17-1.png" >
 
 Add the following details:
 
 Description: TechEd 2025
 System ID: S4A        
-Instance: 00        
-Application Server: s4xp261.tdc.sap.com       
+Instance: 00  
+SAProuter String: leave empty      
+Application Server: s4xp261.tdc.sap.com   (alternatively 34.6.95.215)      
 Client: 101
 
 <img src="./images/S0-7.png" >
 
+Click **OK**. 
+
+4. Leave the next configurations as they are: 
+
 <img src="./images/S0-8.png" >
 
-3. Now that you have created the new connection let's log in! 
+Click **OK**. 
+
+5. Now that you have created the new connection let's log in! 
 <img src="./images/S0-9.png" >
 
 Client: 101
 User:  **XP261-`<NNN>`**. Replace `<NNN>` with your seat number, for example **XP261-`045`**.
 
-4. Let's check the authorization available on this system. Execute the PFCG transaction
+6. Let's check the authorization available on this system. Execute the PFCG transaction
 
 <img src="./images/S0-10.png" >
 

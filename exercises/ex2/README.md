@@ -62,11 +62,11 @@ The values for the properties *ips.application.id.s4* and *ips.application.id.xs
 
 5. Log in your Microsoft Entra ID tenant and check the imported groups. Filter by **TECHED_**. 
 
-<img src="/exercises/ex2/images/S22-31.png"> 
+<img src="/exercises/ex2/images/S22-5.png"> 
 
 Notice that the number and name of groups is similar to the one on the SCI tenant: 
 
-<img src="/exercises/ex2/images/S22-41.png"> 
+
 
 ## Summary
 

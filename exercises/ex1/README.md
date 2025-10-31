@@ -25,7 +25,7 @@ Open each following JSON files in a separate window. Press on **Download Raw Fil
 <img src="/exercises/ex1/images/S11.png">
 
 
-1. [BTP CF import source](./images/BTPCFimportsource.json)
+1. [BTP CF import source](./images/BTPCFimportsource.json ':ignore :target=_self')
 2. [Non-SAP import source](./images/NON-SAPimportsource.json)  
 3. [SAP provisioning source](./images/SAPprovisioningsource.json)
 4. [S4A import source](./images/S4Aimportsource.json)
@@ -186,7 +186,7 @@ Now let's proceed with the target systems.
 9. Repeat steps 4 to 8 for the SAP S/4 target system. Click on the **Add** button and then click on Browse and search for the **S4A provisioning target** file that you previously saved.
 
 
-10. For the source system, choose from the drop-down menu the **SAP provisioning source** system that you created at earlier. This will ensure that the entries coming from the central SCI storage will be provisioned to the S/4 system. Choose the DEstination **ABAP_S4A**.
+10. For the source system, choose from the drop-down menu the **SAP provisioning source** system that you created at earlier. This will ensure that the entries coming from the central SCI storage will be provisioned to the S/4 system. Choose the Destination **ABAP_S4A**.
 
 <img src="/exercises/ex1/images/S14-5.png" >
 
