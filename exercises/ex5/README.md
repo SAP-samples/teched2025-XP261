@@ -17,7 +17,7 @@ In this exercise, you will provision the new user with the two new assignments t
  Navigate to the SAP SCI administration console. 
 
 1. From the third tab Identity Provisioning please choose **Source Systems**.
-2. Choose the source system **Local Directory SAP Provisioning** and navigate to the tab **Jobs**. 
+2. Choose the source system **SAP provisioning source** and navigate to the tab **Jobs**. 
 
 <img src="/exercises/ex5/images/S5-1.png">
 
