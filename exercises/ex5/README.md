@@ -17,7 +17,7 @@ In this exercise, you will provision the new user with the two new assignments t
  Navigate to the SAP SCI administration console. 
 
 1. From the third tab Identity Provisioning please choose **Source Systems**.
-2. Choose the source system **SAP provisioning source** and navigate to the tab **Jobs**. 
+2. Choose the source system **SAP rovisioning source** and navigate to the tab **Jobs**. 
 
 <img src="/exercises/ex5/images/S5-1.png">
 
@@ -55,9 +55,9 @@ In this exercise you will check in the back-end systems that the users are creat
 
 <img src="/exercises/ex5/images/S5-8.png">
 
-5. Navigate to **Roles** and check that the **Procurement_Admin** role is assigned. 
+5. Navigate to **Roles** and check that the **PROCUREMENT_ADMIN_NNN** role is assigned. 
 
-<img src="/exercises/ex5/images/S4-51.png">
+<img src="/exercises/ex5/images/S5-51.png">
 
 ### Status in the SAP BTP subaccount 
 
