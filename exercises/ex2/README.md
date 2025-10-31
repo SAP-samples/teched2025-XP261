@@ -1,5 +1,7 @@
 # Exercise 2 - Provision SAP back-end roles to Microsoft Entra ID
 
+*Estimated Time: **15 min***
+
 In the previous exercise you have all the necessary authorizations from our backend systems. Now you have to synchronize them to the identity management solution, your Entra ID tenant.
 
 <img src="/exercises/ex2/images/Intro2.png">

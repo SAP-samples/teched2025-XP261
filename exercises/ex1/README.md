@@ -1,5 +1,7 @@
 # Exercise 1 - Import SAP back-end roles in SAP Cloud Identity Services 
 
+*Estimated Time: **35 min***
+
 In this exercise, you will import the back-en authorizations to IdDS. For this, you will create IPS source and target systems.  
 <img src="/exercises/ex1/images/Intro1.png">
 
@@ -115,7 +117,7 @@ The value for the property abap.role.name.filter is *PROCUREMENT_ADMIN_NNN*. Rep
 
 5. Let's add a target system for this newly created source system. Navigate to the **Target Systems** . Click on the **Add** button and then click on Browse and search for the **S4A import target** file that you previously saved.
 
-6. For the source system, choose from the drop-down menu the **S4A import source** system that you created at earlier. This will ensure that the entries coming from the BTP Subaccount will be provisioned to the Local Identity Directory. In the tab **Destinations**, choose from the drop-down menu **ABAP_S4A**. 
+6. For the source system, choose from the drop-down menu the **S4A import source** system that you created at earlier. This will ensure that the entries coming from the BTP Subaccount will be provisioned to the Local Identity Directory. 
 
 <img src="/exercises/ex1/images/S13-3.png" >
 
@@ -144,6 +146,8 @@ Give your system a meaningful name. Our suggestion is *SAP provisioning source*.
 2. Navigate to the Properties tab and manually add the following standard properties.
 
 <img src="/exercises/ex1/images/S14-1.png" >
+
+For this exercise only the first property is mandatory. In a real scenario an administrator would most likely add the ips.trace* properties as well, because they are used to enhance the logging when troubleshooting. 
 
 
 | Property Name | Property Value | 

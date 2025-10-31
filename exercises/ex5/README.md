@@ -1,5 +1,7 @@
 # Exercise 5 - Provisioning to SAP back-end systems
 
+*Estimated Time: **5 min***
+
 In this exercise, you will provision the new user with the two new assignments to the SAP target systens. 
 
 <img src="./images/Intro5.png">
