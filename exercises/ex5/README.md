@@ -17,7 +17,7 @@ In this exercise, you will provision the new user with the two new assignments t
  Navigate to the SAP SCI administration console. 
 
 1. From the third tab Identity Provisioning please choose **Source Systems**.
-2. Choose the source system **SAP rovisioning source** and navigate to the tab **Jobs**. 
+2. Choose the source system **SAP provisioning source** and navigate to the tab **Jobs**. 
 
 <img src="/exercises/ex5/images/S5-1.png">
 
@@ -63,13 +63,13 @@ In this exercise you will check in the back-end systems that the users are creat
 
 1. Navigate to your SAP BTP subaccount
 
-2. Click on **Users**
+2. Click on **Role Collections**
 
-3. Identify your user and check the **Role Collections** assigned. 
+3. Identify your role collection **FINANCE_ADMIN_`NNN`** and check that your user **jsmith`NNN`@bestruncorp.onmicrosoft.com** is correctly assigned. 
 
 <img src="/exercises/ex5/images/S5-11.png">
 
 ## Summary
 
-Congratulations! You have now successfully configured and tested your end to end provisioning flow. 
+Congratulations! You have now successfully completed this hands-on session and configured and tested your end-to-end provisioning flow. 
 
