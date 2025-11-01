@@ -117,7 +117,7 @@ The value for the property abap.role.name.filter is *PROCUREMENT_ADMIN_NNN*. Rep
 
 5. Let's add a target system for this newly created source system. Navigate to the **Target Systems** . Click on the **Add** button and then click on Browse and search for the **S4A import target** file that you previously saved.
 
-6. For the source system, choose from the drop-down menu the **S4A import source** system that you created at earlier. This will ensure that the entries coming from the BTP Subaccount will be provisioned to the Local Identity Directory. 
+6. For the source system, choose from the drop-down menu the **S4A import source** system that you created at earlier. This will ensure that the entries coming from the S/4 system will be provisioned to the Local Identity Directory. 
 
 <img src="/exercises/ex1/images/S13-3.png" >
 
