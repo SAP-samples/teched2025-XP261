@@ -5,8 +5,8 @@
 In this exercise, you will import the back-en authorizations to IdDS. For this, you will create IPS source and target systems.  
 <img src="/exercises/ex1/images/Intro1.png">
 
-* you will start by creating source systems for importing authorizations in SAP SCI from the SAP S/4 and the BTP subaccount. 
-* These authorization will be sent via IPS to the Entra ID tenant in [exercise 2](../ex2/README.md). Entra ID is the IdM solution responsible for centrally managing the assignments, therefore you need the SAP authorizations in the Entra ID tenant. For this purpose, you will create a target system that corresponds to Entra ID. 
+* you will start by creating source-target systems for importing authorizations in SAP SCI from the SAP S/4 and the BTP subaccount 
+* these authorization will be sent via IPS to the Entra ID tenant in [exercise 2](../ex2/README.md). Microsoft Entra is the IdM solution responsible for centrally managing the assignments, therefore you need the SAP authorizations in the Entra ID tenant. For this purpose, you will create a target system that corresponds to Entra ID. 
 * you will create systems for assignment and user provisioning to the SAP solutions
 
 
@@ -117,7 +117,7 @@ The value for the property abap.role.name.filter is *PROCUREMENT_ADMIN_NNN*. Rep
 
 5. Let's add a target system for this newly created source system. Navigate to the **Target Systems** . Click on the **Add** button and then click on Browse and search for the **S4A import target** file that you previously saved.
 
-6. For the source system, choose from the drop-down menu the **S4A import source** system that you created at earlier. This will ensure that the entries coming from the BTP Subaccount will be provisioned to the Local Identity Directory. 
+6. For the source system, choose from the drop-down menu the **S4A import source** system that you created at earlier. This will ensure that the entries coming from the S/4 system will be provisioned to the Local Identity Directory. 
 
 <img src="/exercises/ex1/images/S13-3.png" >
 
@@ -134,7 +134,7 @@ The value for the property abap.role.name.filter is *PROCUREMENT_ADMIN_NNN*. Rep
 <img src="/exercises/ex1/images/S13-121.png">
 
 ## 1.4  Systems for provisioning to SAP back-end applications 
-Up until now you have created the connections between SCI and back-end systems for authorization import. Any subsequent user creation and authorization assignment will be performed centrally by Microsoft Entra ID in the SCI and afterwards provisioned to the back-end. It is a bad practice to perform authorization assignments in the back-end systems because the whole landscape will be out of sync. 
+Up until now you have created the connections between SCI and back-end systems for authorization import. Any subsequent user creation and authorization assignment will be performed centrally by Microsoft Entra in the SCI and afterwards provisioned to the back-end. It is a bad practice to perform authorization assignments in the back-end systems because the whole landscape will be out of sync. 
 
 In this exercise you will create the necessary connections between SCI and the back-end systems for subsequent provisioning. For this you will need a source system representing the central storage of the SCI and two target systems representing the back-end systems. you will create the source system manually and the target systems, from imported files as you did till now.
 
