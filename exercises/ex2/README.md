@@ -1,5 +1,7 @@
 # Exercise 2 - Provision SAP back-end roles to Microsoft Entra ID
 
+*Estimated Time: **15 min***
+
 In the previous exercise you have all the necessary authorizations from our backend systems. Now you have to synchronize them to the identity management solution, your Entra ID tenant.
 
 <img src="/exercises/ex2/images/Intro2.png">
@@ -42,6 +44,8 @@ The values for the properties *ips.application.id.s4* and *ips.application.id.xs
 * for *ips.application.id.xsuuaa* navigate to your **BTP CF import source**  source system and search for the ips.application.id property, and copy the value. 
 * for *ips.application.id.s4* navigate to your **S4A import source**  source system and search for the ips.application.id property, and copy the value. 
 
+For the rest of the properties, use the XP261 keys.xslx file that you saved previously.
+
 <img src="/exercises/ex2/images/S211-4.png"> 
 
 4. Save your system. 
@@ -62,11 +66,11 @@ The values for the properties *ips.application.id.s4* and *ips.application.id.xs
 
 5. Log in your Microsoft Entra ID tenant and check the imported groups. Filter by **TECHED_**. 
 
-<img src="/exercises/ex2/images/S22-31.png"> 
+<img src="/exercises/ex2/images/S22-5.png"> 
 
 Notice that the number and name of groups is similar to the one on the SCI tenant: 
 
-<img src="/exercises/ex2/images/S22-41.png"> 
+
 
 ## Summary
 

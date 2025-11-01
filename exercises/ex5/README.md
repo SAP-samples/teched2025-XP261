@@ -1,5 +1,7 @@
 # Exercise 5 - Provisioning to SAP back-end systems
 
+*Estimated Time: **5 min***
+
 In this exercise, you will provision the new user with the two new assignments to the SAP target systens. 
 
 <img src="./images/Intro5.png">
@@ -15,7 +17,7 @@ In this exercise, you will provision the new user with the two new assignments t
  Navigate to the SAP SCI administration console. 
 
 1. From the third tab Identity Provisioning please choose **Source Systems**.
-2. Choose the source system **Local Directory SAP Provisioning** and navigate to the tab **Jobs**. 
+2. Choose the source system **SAP rovisioning source** and navigate to the tab **Jobs**. 
 
 <img src="/exercises/ex5/images/S5-1.png">
 
@@ -24,8 +26,12 @@ In this exercise, you will provision the new user with the two new assignments t
 <img src="/exercises/ex5/images/S5-2.png">
 
 4. Navigate to Provisioning Logs and check the provisioning status and the details. 
+
 <img src="/exercises/ex5/images/S5-4.png">
+
 When analyzing the details you will notice that in each target solution one user was created and one group was updated. 
+
+<img src="/exercises/ex5/images/S5-44.png">
 
 ## 5.2 Check user creation and group assignment in the back-end
 
@@ -34,29 +40,34 @@ In this exercise you will check in the back-end systems that the users are creat
 ### Status in SAP S/4HANA PCE system 
 
 1. Navigate to your SAP S/4HANA PCE system and **Execute** the **SU01** transaction.
+
 <img src="/exercises/ex5/images/S5-5.png">
 
-2. Search your user by the email address
+2. Search your user, by using the email address for example: 
+
 <img src="/exercises/ex5/images/S5-6.png">
 
 3. Press **Enter**
+
 <img src="/exercises/ex5/images/S5-7.png">
 
 4. Press **Display**
+
 <img src="/exercises/ex5/images/S5-8.png">
 
-5. Navigate to **Roles** and check that the **Procurement_Admin** role is assigned. 
+5. Navigate to **Roles** and check that the **PROCUREMENT_ADMIN_NNN** role is assigned. 
 
-<img src="/exercises/ex5/images/S5-9.png">
+<img src="/exercises/ex5/images/S5-51.png">
 
-### Status in teh SAP BTP subaccount 
+### Status in the SAP BTP subaccount 
 
 1. Navigate to your SAP BTP subaccount
 
 2. Click on **Users**
+
 3. Identify your user and check the **Role Collections** assigned. 
 
-<img src="/exercises/ex5/images/S5-10.png">
+<img src="/exercises/ex5/images/S5-11.png">
 
 ## Summary
 
