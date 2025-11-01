@@ -137,5 +137,6 @@ You will find a subbacout that coresonds to your seat number:
 
 ## Summary
 
-Congratulations for completing the initial setup steps. Now get started with exercise [exercise 1](../ex1/README.md), or go back to the [overview](../README.md).
+Congratulations for completing the initial setup steps. Now get started with [Exercise 1 - Import SAP back-end roles in SAP Cloud Identity Services](../ex1/README.md), or go back to the [overview](../README.md).
+
 
