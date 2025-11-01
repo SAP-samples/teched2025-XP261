@@ -27,8 +27,7 @@ Replace `NNN` with the number of your seat, for example **admin`045`@bestruncorp
    
    <img src="./images/S4-2.png">
   
-3.    Enter your seat number `NNN` in the search bar, for example `004`.<br><br>Select the enteprise app **SAP SuccessFactors Provisioning `NNN`**.<br><br>Replace `NNN` with your seat number, for example **SAP SuccessFactors Provisioning `004`**  
-  
+3.    Enter your seat number `NNN` in the search bar, for example `004`.<br><br>Select the enteprise app **SAP SuccessFactors Provisioning `NNN`** assigned to your seat.<br><br>Replace `NNN` with your seat number, for example **SAP SuccessFactors Provisioning `004`**
   
 <img src="./images/S4-3.png">
 
