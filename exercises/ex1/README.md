@@ -190,7 +190,7 @@ Now let's proceed with the target systems.
 <img src="/exercises/ex1/images/S14-5.png" >
 
 
-11. Navigate to the Properties Tab and add the values for the properties that are marked in red. The *ips.application.is** is the one that you found at step 3 in Exercise 1.3.
+11. Navigate to the Properties Tab and add the values for the properties that are marked in red. The *ips.application.id* is the one that you found at step 3 in Exercise 1.3.
 
 <img src="/exercises/ex1/images/S14-6.png" >
 
