@@ -23,7 +23,7 @@ In this exercise, you will onboard the new employee in the scenario with the nam
 
 <img src="./images/S3-2.png" >
 
-3. Enter the follwing values. and replace `NNN` with your seat number:<br><br><ul><li><b>Hire Date</b>: keep the default for today</li><li><b>Company</b>: Ace Germany</li><li><b>Event Reason</b>: New Hire (HIRNEW)</li><li><b>First Name</b>: Jane</li><li><b>Last Name</b>: Smith&lt;`NNN`&gt;</li><li><b>Display Name</b>: Jane Smith&lt;`NNN`&gt;</li></ul> 
+3. Enter the following values. and replace `NNN` with your seat number:<br><br><ul><li><b>Hire Date</b>: keep the default for today</li><li><b>Company</b>: Ace Germany</li><li><b>Event Reason</b>: New Hire (HIRNEW)</li><li><b>First Name</b>: Jane</li><li><b>Last Name</b>: Smith&lt;`NNN`&gt;</li><li><b>Display Name</b>: Jane Smith&lt;`NNN`&gt;</li></ul> 
 
 <img src="./images/S3-30.png" >
 
