@@ -60,7 +60,7 @@ For the rest of the properties, use the XP261 keys.xslx file that you saved prev
 
 <img src="./images/S22-1.png"> 
 
-4. Navigate to Provisioning Logs and check the provisioning status and the details. You will notice that you have only created groups in your **BestRunCorp Tenant** tenant
+4. Navigate to Provisioning Logs and check the provisioning status and the details. You will notice that you have only created groups in your **BestRunCorp Tenant**. 
 
 <img src="./images/S22-2.png"> 
 

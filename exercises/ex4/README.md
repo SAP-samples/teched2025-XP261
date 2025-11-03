@@ -136,7 +136,7 @@ In a productive setup you would schedule a job to go through the assignments in 
 
 <img src="./images/S42-41.png">
 
-Click **Provisioning**. 
+Click **Provision**. 
 
 5. Let's analyze the provisioning details. As the group existed in SAP SCI, it was only updated with the new assignment. 
 <img src="./images/S4-291.png">
@@ -168,7 +168,7 @@ Click **Provisioning**.
 
 <img src="./images/S4-35.png">
 
-Copy the **User principle name** because you will need it later. 
+Copy the **User principal name** because you will need it later. 
 
 12. Navigate to your SAP SCI console and navigate to the second tab **Users & Authorizations** and choose **Users**. Choose your newly created users and navigate to the **Group** tab.  You can search by email address (the user principal name from earlier).
 
