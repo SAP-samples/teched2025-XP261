@@ -22,9 +22,10 @@ In this exercise, you will import the back-en authorizations to IdDS. For this, 
 
 Save all these  JSON files locally because you will need to import them in the next step. Open the following JSON files in a separate window. 
 
-Open each following JSON files in a separate window. Press on **Download Raw File** in the window that will open. 
+Open each following JSON files in a separate window. Since you will have to perform few copy-paste operations, it will be easier to have the SAP SCI URL open in two tabs in your browser. Press on **Download Raw File** in the window that will open. 
 
 <img src="/exercises/ex1/images/S11.png">
+
 
 
 1. [BTP CF import source](./images/BTPCFimportsource.json ':ignore :target=_self')
