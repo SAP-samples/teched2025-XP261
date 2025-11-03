@@ -92,7 +92,7 @@ Add the following details:
 * System ID: S4A   
 * Instance: 00      
 * SAProuter String: leave empty      
-* Application Server: s4xp261.tdc.sap.com (alternatively 34.6.95.215)      
+* Application Server: s4xp261.tdc.sap.com      
 * Client: 101
 
 <img src="./images/S0-7.png" >
