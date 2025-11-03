@@ -88,12 +88,12 @@ Click **Next** and manually add the following values:
 
 Add the following details:
 
-Description: TechEd 2025
-Instance: 00 
-System ID: S4A        
-SAProuter String: leave empty      
-Application Server: s4xp261.tdc.sap.com (alternatively 34.6.95.215)      
-Client: 101
+* Description: TechEd 2025
+* System ID: S4A   
+* Instance: 00      
+* SAProuter String: leave empty      
+* Application Server: s4xp261.tdc.sap.com (alternatively 34.6.95.215)      
+* Client: 101
 
 <img src="./images/S0-7.png" >
 
