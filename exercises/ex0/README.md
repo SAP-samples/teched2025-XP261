@@ -21,6 +21,7 @@ You will get access to the following systems:
 * [SAP S/4HANA Private Edition](#accessing-sap-s4hana-cloud-private-edition)  
 * [BTP subaccount](#accessing-your-btp-subaccount). 
 
+Please use your browser in **incognito mode**. 
 
 ### Accessing Microsoft Entra
 
