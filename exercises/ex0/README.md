@@ -79,7 +79,7 @@ URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP062575
 
 1. Search for the SAP Logon icon <img src="./images/S17.png" width=10% height=10%> on your desktop. 
 
-2. Search for the connection to system **S4A**. If you don't find it, create a new connection for it
+2. Search for the connection **S4XP261** in the list. If you don't find it, create a new connection for it
 
 <img src="./images/S0-61.png" >
 
@@ -141,5 +141,6 @@ You will find a subbacout that coresonds to your seat number:
 ## Summary
 
 Congratulations for completing the initial setup steps. Now get started with [Exercise 1 - Import SAP back-end roles in SAP Cloud Identity Services](../ex1/README.md), or go back to the [overview](../README.md).
+
 
 
