@@ -21,7 +21,7 @@ You will get access to the following systems:
 * [SAP S/4HANA Private Edition](#accessing-sap-s4hana-cloud-private-edition)  
 * [BTP subaccount](#accessing-your-btp-subaccount). 
 
-Please use your browser in **incognito mode**. 
+Please use your browser in **Incognito / InPrivate** mode.
 
 ### Accessing Microsoft Entra
 
@@ -49,9 +49,9 @@ Setup Multifactor Authentication (MFA) for your Entra admin user. This is requir
 | 18   | Click **Done**.|<a href="./images/0-17.jpg" target="_blank"><img src="./images/0-17.jpg" width="250"/></a>|
 | 19   | You've successfully logged in the Entra admin center.|<a href="./images/0-18.jpg" target="_blank"><img src="./images/0-18.jpg" width="250"/></a>|
 
-### Accessing your SAP Cloud Identity Services tenant 
+### Accessing your SAP Cloud Identity Services tenant
 
-1. Search for the internet browser on your computer and navigate to your SCI administrative console. The SAP Cloud Identity Service tenant URL and username are specific for your seat in the workshop room.<br>
+1. Navigate to your SCI administrative console. The SAP Cloud Identity Service tenant URL and username are specific for your seat in the workshop room.<br>
 URL pattern: https://bestruncorp-NN.accounts.ondemand.com/admin/<br>
 Replace `<NN>` with your seat number, for example `05` or `31`.
 
@@ -64,10 +64,10 @@ Replace `<NN>` with your seat number, for example `05` or `31`.
    <img src="./images/S0-2.png" >
    
 ### Accessing SAP SuccessFactors tenant
-1. Search for the internet browser on your computer and navigate to your SAP SuccessFactors (SAP SFSF) tenant.
-Unlike the previous exercise, you will use a shared SAP SFSF tenant 
+1. Navigate to your SAP SuccessFactors (SAP SFSF) tenant.
+Unlike the previous exercise, you will use a shared SAP SFSF tenant: 
 
-URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP062575
+URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP075078
 
  <img src="./images/S0-3.png" >
 
