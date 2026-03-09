@@ -23,11 +23,11 @@ In this exercise, you will onboard the new employee in the scenario with the nam
 
 <img src="./images/S3-2.png" >
 
-3. Enter the following values. and replace `NNN` with your seat number:<br><br><ul><li><b>Hire Date</b>: keep the default for today</li><li><b>Company</b>: Ace Germany</li><li><b>Event Reason</b>: New Hire (HIRNEW)</li><li><b>First Name</b>: Jane</li><li><b>Last Name</b>: Smith&lt;`NNN`&gt;</li><li><b>Display Name</b>: Jane Smith&lt;`NNN`&gt;</li></ul> 
+3. Enter the following values. and replace `NNN` with your seat number:<br><br><ul><li><b>Hire Date</b>: keep the default for today</li><li><b>Company</b>: Ace Germany</li><li><b>Event Reason</b>: New Hire (HIRNEW)</li><li><b>First Name</b>: Jane</li><li><b>Last Name</b>: Smith&lt;`NNN`&gt;, for example Smith045</li><li><b>Display Name</b>: Jane Smith&lt;`NNN`&gt;, for example Jane Smith045</li></ul> 
 
 <img src="./images/S3-30.png" >
 
-4. Scroll down and enter the <b>Person Id</b>: jsmith&lt;`NNN`&gt;.<br><br>Replace `NNN` with your seat number.
+4. Scroll down and enter the <b>Person Id</b>: jsmith&lt;`NNN`&gt;.<br><br>Replace `NNN` with your seat number, for example *jsmith045* or *jsmith008*
 
 <img src="./images/S3-40.png" >
 

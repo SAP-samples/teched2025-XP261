@@ -73,8 +73,9 @@ Click **Next: Resource roles**.
 
 <img src="./images/S4-12.png">
 
-14.   Select the options **For users in your directory** and **All members (excluding guests)**.<be><br>
-Set **Require approval** to **No**<br>and **Disable assignment emails** to **Yes**.<br><br>
+14.   Select the options **For users in your directory** and **All members (excluding guests)**.<br><br>
+Set **Who can request access** to **Self**, and **Require approval** to **No**<br><br>
+Set **Disable assignment emails** to **Yes**.<br><br>
 Click **Next: Requestor information**.  
 
 <img src="./images/S4-14.png">
@@ -102,7 +103,7 @@ Click **New assignment**.
 <img src="./images/S4-19.png">
 
 20.   Select **Initial Policy** from the **Select Policy** drop-down box.
-Click **Add users**.
+Click **Add identities**.
 
 <img src="./images/S4-20.png">
 
@@ -113,7 +114,7 @@ Click **Add users**.
 22.   Click **Add**.  
 <img src="./images/S4-22.png">
 
-23.   Click **Refresh**. Your user should be listed in the assignments for your access package.  
+23.   Click **Refresh**. Your user should be listed in the assignments for your access package. Wait for the status to show **Delivered**.  
 <img src="./images/S4-23.png">
 
 In a productive setup you would schedule a job to go through the assignments in the Access Package and provision them to the backend applications. In the favor of time, you will provision these groups on-demand to the target solution, the SAP SCI tenant. 

@@ -64,9 +64,9 @@ Search for the application that corresponds to you seat number: XP261_0NN and co
 
 <img src="/exercises/ex1/images/S125.png">
 
-For the other properties, please check the **XP261 keys.xslx** file that you saved previously. 
+For the other properties, please check the **XP261 keys.xslx** file that you saved previously. The values can be found on the *2nd sheet "Exercise 2"*.
 
-4. Now save your system. 
+4. Now save your system.
 
 <img src="/exercises/ex1/images/S126.png">
 
@@ -94,7 +94,7 @@ This will ensure that the entries coming from the BTP Subaccount will be provisi
 
 <img src="/exercises/ex1/images/S130.png">
 
-Click on the result and inspect the details. Afterwards navigate from the console to the tab **Users & Authorizations**  and choose **Groups**
+Click on the result and inspect the details. Afterwards navigate from the console to the tab **Users & Authorizations** and choose **Groups**. You should see a group **TECHED_BTP_FINANCE_ADMIN_<NNN>** created in your SCI tenant from the BTP import.
 
 
 ## 1.3  SAP S/4HANA Cloud Private Edition onboarding 
@@ -108,13 +108,13 @@ In the tab **Destinations**, choose from the drop-down menu **ABAP_S4A**
 
 3. Navigate  to the third tab  **Properties** tab and fill in the red marked properties: 
 
-<img src="/exercises/ex1/images/S13-22.png" >
+<img src="/exercises/ex1/images/S13-22.png">
 
-For the property *ips.application.id*, similarly with exercise 1.2 step 3, you will need to search for the Application ID value of the S/4HANA Cloud Private Edition in IAS. To find this value, duplicate this browser tab and navigate in the SCI console to the 4th tab **Applications & Resources** and choose **Applications**. Search for the S/4HANA application and copy the value of the Application ID. 
+For the property *ips.application.id*, similarly with exercise 1.2 step 3, you will need to search for the Application ID value of the S/4HANA Cloud Private Edition in IAS. To find this value, duplicate this browser tab and navigate in the SCI console to the 4th tab **Applications & Resources** and choose **Applications**. Search for the S/4HANA application and copy the value of the Application ID.
 
 The value for the property abap.role.name.filter is *PROCUREMENT_ADMIN_NNN*. Replace `<NNN>` with your seat number, for example **PROCUREMENT_ADMIN_010**.
 
-4. Now save your system. 
+4. Now save your system.
 
 5. Let's add a target system for this newly created source system. Navigate to the **Target Systems** . Click on the **Add** button and then click on Browse and search for the **S4A import target** file that you previously saved.
 
@@ -134,10 +134,10 @@ The value for the property abap.role.name.filter is *PROCUREMENT_ADMIN_NNN*. Rep
 
 <img src="/exercises/ex1/images/S13-121.png">
 
-## 1.4  Systems for provisioning to SAP back-end applications 
-Up until now you have created the connections between SCI and back-end systems for authorization import. Any subsequent user creation and authorization assignment will be performed centrally by Microsoft Entra in the SCI and afterwards provisioned to the back-end. It is a bad practice to perform authorization assignments in the back-end systems because the whole landscape will be out of sync. 
+## 1.4  Systems for provisioning to SAP back-end applications
+Up until now you have created the connections between SCI and back-end systems for authorization import. Any subsequent user creation and authorization assignment will be performed centrally by Microsoft Entra in the SCI and afterwards provisioned to the back-end. It is a bad practice to perform authorization assignments in the back-end systems because the whole landscape will be out of sync.
 
-In this exercise you will create the necessary connections between SCI and the back-end systems for subsequent provisioning. For this you will need a source system representing the central storage of the SCI and two target systems representing the back-end systems. you will create the source system manually and the target systems, from imported files as you did till now.
+In this exercise you will create the necessary connections between SCI and the back-end systems for subsequent provisioning. For this you will need a source system representing the central storage of the SCI and two target systems representing the back-end systems. You will create the source system manually and the target systems, from imported files as you did till now.
 
 1. In your SCI administrative console tab Identity Provisioning, please choose **Source Systems**. Click on the **Add** button and then choose the type **Local Identity Directory**
 Give your system a meaningful name. Our suggestion is *SAP provisioning source*.

@@ -10,7 +10,7 @@ SAP Cloud Identity Services (SCI) are a group of services of SAP Business Techno
 - [Summary](#summary)
 
 ## Accessing the landscape
-Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session. Refer to the attached [XP261 keys.xslx](./images/XP261keys.xlsx) for additional credentials. Press on **Download Raw File** in the window that will open. 
+Please follow the steps described in this section to prepare your user account for accessing the systems in this hands-on session. Refer to the *1st sheet "Getting Started"* in the attached [XP261 keys.xslx](./images/XP261keys.xlsx) for additional credentials. Press on **Download Raw File** in the window that will open.
 
 <img src="/exercises/ex1/images/S11.png">
 
@@ -51,7 +51,7 @@ Setup Multifactor Authentication (MFA) for your Entra admin user. This is requir
 
 ### Accessing your SAP Cloud Identity Services tenant
 
-1. Navigate to your SCI administrative console. The SAP Cloud Identity Service tenant URL and username are specific for your seat in the workshop room.<br>
+1. Open a new browser tab in your **Incognito / InPrivate** browser. Navigate to your SCI administrative console. The SAP Cloud Identity Service tenant URL and username are specific for your seat in the workshop room.<br>
 URL pattern: https://bestruncorp-NN.accounts.ondemand.com/admin/<br>
 Replace `<NN>` with your seat number, for example `05` or `31`.
 
@@ -64,7 +64,7 @@ Replace `<NN>` with your seat number, for example `05` or `31`.
    <img src="./images/S0-2.png" >
    
 ### Accessing SAP SuccessFactors tenant
-1. Navigate to your SAP SuccessFactors (SAP SFSF) tenant.
+1. Open a new browser tab in your **Incognito / InPrivate** browser. Navigate to your SAP SuccessFactors (SAP SFSF) tenant.
 Unlike the previous exercise, you will use a shared SAP SFSF tenant: 
 
 URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP075078
@@ -124,7 +124,7 @@ In exercise 5, this role will be assigned in Micrososft Entra to a newly created
 
 ### Accessing your BTP subaccount
 
-1. On your internet browser navigate to the global account tenant: https://emea.cockpit.btp.cloud.sap/cockpit/?idp=teched2025-00.accounts.ondemand.com#/globalaccount/4c772782-0751-42ee-93c3-897452fdcb63/ 
+1. Open a new tab in your in your **Incognito / InPrivate** browser. Navigate to the global account tenant: https://emea.cockpit.btp.cloud.sap/cockpit/?idp=teched2025-00.accounts.ondemand.com#/globalaccount/4c772782-0751-42ee-93c3-897452fdcb63/ 
 
 2. Login with the user xp261-`<NNN>`@education.cloud.sap from your subaccount's platform identity provider (https://teched2025-00.accounts.ondemand.com).<br>
 Replace `<NNN>` with your seat number, for example xp261-`016`@education.cloud.sap for seat 16.<br>
@@ -132,15 +132,12 @@ You will find a subbacout that coresonds to your seat number:
 
  <img src="./images/S0-5.png" >
 
- 3. Press on the subaccount and search under **Role Collections** for the **FINANCE_ADMIN** role collection. 
+ 3. Press on the subaccount and search under **Role Collections** for the **FINANCE_ADMIN_NNN** role collection.
  
  <img src="./images/S0-122.png" >
 
- In exercise 5, this role collection will be assigned in Micrososft Entra to a newly created employee. 
+ In exercise 5, this role collection will be assigned in Micrososft Entra to a newly created employee.
 
 ## Summary
 
 Congratulations for completing the initial setup steps. Now get started with [Exercise 1 - Import SAP back-end roles in SAP Cloud Identity Services](../ex1/README.md), or go back to the [overview](../README.md).
-
-
-
