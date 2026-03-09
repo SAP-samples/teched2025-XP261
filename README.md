@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2025 session XP261 - Identity lifecycle management with SAP BTP and Microsoft Entra.  
+This repository contains the material for the [SAP TechEd on Tour](https://www.sap.com/events/teched.html) session XP261 - Identity lifecycle management with SAP BTP and Microsoft Entra.  
 
 ## Overview
 
