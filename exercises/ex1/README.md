@@ -64,7 +64,7 @@ Search for the application that corresponds to you seat number: XP261_0NN and co
 
 <img src="/exercises/ex1/images/S125.png">
 
-For the other properties, please check the **XP261 keys.xslx** file that you saved previously. The values can be found on the *2nd sheet "Exercise 2"*.
+For the other properties, please check the **XP261 keys.xslx** file that you saved previously. The values can be found on the *2nd sheet "Exercise 1"*.
 
 4. Now save your system.
 
