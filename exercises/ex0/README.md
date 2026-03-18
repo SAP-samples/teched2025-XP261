@@ -77,7 +77,7 @@ URL: https://hcm-eu10-sales.hr.cloud.sap/login?company=SFLAP075078
 
 ### Accessing SAP S/4HANA Cloud Private Edition
 
-1. Search for the SAP Logon icon <img src="./images/S17.png" width=10% height=10%> on your desktop. 
+1. Start SAP Logon <img src="./images/S17.png" width=10% height=10%> on your desktop. 
 
 2. Search for the connection **S4XP261** in the list. If you don't find it, create a new connection for it
 
@@ -89,7 +89,7 @@ Click **Next** and manually add the following values:
 
 Add the following details:
 
-* Description: TechEd 2025
+* Description: TechEdOnTour
 * System ID: S4A   
 * Instance: 00      
 * SAProuter String: leave empty      

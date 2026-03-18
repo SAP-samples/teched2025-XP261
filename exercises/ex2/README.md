@@ -7,52 +7,10 @@ In the previous exercise you have imported all the necessary authorizations from
 <img src="./images/Intro2.png">
 
 ## Table of Contents
-- [2.1 Systems for Microsoft Entra ID import](#21--systems-for-microsoft-entra-id-import)
-- [2.2 Trigger groups import to Entra ID](#22-trigger-groups-import-to-entra-id)
+- [2.1 Trigger groups import to Entra ID](#21-trigger-groups-import-to-entra-id)
 - [Summary](#summary)
 
-
-## 2.1 Systems for Microsoft Entra ID import  
-
-### 2.1.1 Create one IPS source system for syncing authorizations to Entra ID
-
-With the previously created systems you are importing in the Identity Directory all the authorizations from the SAP back-end applications. Because you want to sync these SAP authorization to Entra ID, you will create a dedicated source system representing the IdDS.
-
-1. Navigate to the SCI administrative console and from the third tab Identity Provisioning please choose **Source Systems**. Click on the **Add** button and then click on Browse and search for the **Non-SAP import source** file. 
-
-<img src="./images/S211-1.png">
-
-2. Navigate  to the third tab  **Properties** tab.  Note that for this system type you do not need to specify connection details. This is because the local store inside this tenant is used. You can change all the values of the available properties to *true*. What this does, is setting the debugging level at the highest level.
-
-<img src="./images/S211-2.png">
-
-5. Now save your system. 
-
-
-### 2.1.2 Create one IPS target system for provisioning to Entra ID. 
-1. Navigate to your target systems. Click on the **Add** button and then click on Browse and search for the **Non-SAP import target** file that you previously saved.
-
-
-
-2. For the source system, choose from the drop-down menu the **Non-SAP import source** system that you created at earlier. This will ensure that the entries coming from the Identity Directory will be provisioned to this system.
-
-<img src="./images/S211-3.png">
-
-3. Navigate to the Properties Tab and add the values for the properties that are marked in red. 
-
-The values for the properties *ips.application.id.s4* and *ips.application.id.xsuaa* are the ones that you wrote in the previous steps. You can find these values as follows:
-* for *ips.application.id.xsuuaa* navigate to your **BTP CF import source**  source system and search for the ips.application.id property, and copy the value. 
-* for *ips.application.id.s4* navigate to your **S4A import source**  source system and search for the ips.application.id property, and copy the value. 
-
-For the rest of the properties, see the *3rd sheet "Exercise 2"* in the XP261 keys.xslx file that you saved previously.
-
-<img src="./images/S211-4.png"> 
-
-4. Save your system. 
-
-
-## 2.2 Trigger groups import to Entra ID
-
+## 2.1 Trigger groups import to Entra ID
 
 1. Navigate to your **Source Systems**.
 2. Choose the source system **Non-SAP import source** and navigate to the tab **Jobs**. 
@@ -72,7 +30,7 @@ Replace `NNN` with the number of your seat, for example **admin`045`@bestruncorp
 
 Select **Groups** from the navigation menu.
 
-In the search bar, filter by your seat number `NNN`, for example `043`. 
+In the search bar, filter by your seat number `NNN`, for example `043`.
 
 <img src="./images/S22-5.png"> 
 
