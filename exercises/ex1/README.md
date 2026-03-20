@@ -55,7 +55,7 @@ Open each following JSON files in a separate window. Since you will have to perf
 
 <img src="/exercises/ex1/images/S130.png">
 
-Click on the result and inspect the details. Afterwards navigate from the console to the tab **Users & Authorizations** and choose **Groups**. You should see a group **TECHED_BTP_FINANCE_ADMIN_<NNN>** created in your SCI tenant from the BTP import.
+Click on the result and inspect the details. Afterwards navigate from the console to the tab **Users & Authorizations** and choose **Groups**. You should see a group **TECHED_BTP_FINANCE_ADMIN_`NNN`** created in your SCI tenant from the BTP import.
 
 ## 1.3  SAP S/4HANA Cloud Private Edition onboarding 
 
