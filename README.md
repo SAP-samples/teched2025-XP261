@@ -6,7 +6,7 @@ This repository contains the material for the [SAP TechEd on Tour](https://www.s
 
 ## Overview
 
-Learn how to integrate SAP Cloud Identity Services with Microsoft Entra to deliver unified user lifecycle management across SAP software and third-party applications. The end-to-end scenario in this hands-on session spans across cloud and on-premises environments to provide consistent access control throughout the enterprise. Try it out!
+Learn how to integrate SAP Cloud Identity Services with Microsoft Entra to deliver unified user lifecycle management across SAP software and third-party applications. The end-to-end scenario in this hands-on session spans across cloud and on-premises environments to provide consistent access control throughout the enterprise.  
 <img src=".\Intro.png"/>
 
 ## Requirements
