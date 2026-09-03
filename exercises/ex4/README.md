@@ -129,7 +129,7 @@ In a productive setup you would schedule a job to go through the assignments in 
 
 <img src="./images/S4-26.png">
 
-3. Select **Provisioning on demand** from the navigation menue and search for the first group **TECHED_BTP_FINANCE_ADMIN_`NNN`**.
+3. Select **Provisioning on demand** from the navigation menue and search for the first group **TECHED_BTP_FINANCE_ADMIN_`NNN`**. Search for exact string as only the first 5 results will be displayed.
 
 <img src="./images/S52-31.png">
 
@@ -150,7 +150,7 @@ Click **Provision**.
 
 <img src="./images/S4-31.png">
 
-8. Search for the group **TECHED_S4A_PROCUREMENT_ADMIN_`NNN`**
+8. Search for the group **TECHED_S4A_PROCUREMENT_ADMIN_`NNN`**. Search for exact string as only the first 5 results will be displayed.
 
 <img src="./images/S4-111111.png"> 
 
