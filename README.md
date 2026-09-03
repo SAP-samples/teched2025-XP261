@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2025-XP261)](https://api.reuse.software/info/github.com/SAP-samples/teched2025-XP261)
+
 # XP261 - Identity lifecycle management with SAP BTP and Microsoft Entra
 
 ## Description
